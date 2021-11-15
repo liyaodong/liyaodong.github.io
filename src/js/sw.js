@@ -3,9 +3,9 @@ importScripts(
 );
 
 if (workbox) {
-    workbox.precaching.precacheAndRoute([]);
+    workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
 
-    const registStaleWhileRevalidate = regex => {
+    const registStaleWhileRevalidate = (regex) => {
         workbox.routing.registerRoute(
             regex,
             workbox.strategies.staleWhileRevalidate()

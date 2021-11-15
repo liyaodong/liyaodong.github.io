@@ -1,21 +1,21 @@
 {
-  "name": "personal_home",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Yaodong Li <mail@liyaodong.com>",
-  "license": "MIT",
-  "scripts": {
-    "start": "http-server ./ -a 127.0.0.1",
-    "build": "yarn build:workbox && yarn build:reading && yarn build:lang",
-    "build:lang": "gulp && mv resume-en-US.html resume.html",
-    "build:workbox": "workbox injectManifest workbox-config.js",
-    "build:reading": "rsync -ru /Users/ydli/Dropbox/notes/reading/* ./reading && rm ./reading/*.org && node ./generateReadingList.js",
-    "deploy": "yarn build && sleep 2 && yarn commit && git push",
-    "commit": "git commit -a -m \"Deploy Site: `date '+%Y-%m/%d %H:%M:%S'`\""
-  },
-  "devDependencies": {
-    "cheerio": "^1.0.0-rc.3",
-    "gulp": "^4.0.2",
-    "gulp-html-i18n": "^0.16.0"
-  }
+    "name": "personal_home",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Yaodong Li <mail@liyaodong.com>",
+    "license": "MIT",
+    "scripts": {
+        "start": "http-server ./ -a 127.0.0.1",
+        "build": "yarn build:workbox && yarn build:reading && yarn build:lang",
+        "build:lang": "gulp && mv resume-en-US.html resume.html",
+        "build:workbox": "workbox injectManifest workbox-config.js",
+        "build:reading": "rsync -ru /Users/vanilla/Dropbox/notes/reading/* ./reading && rm ./reading/*.org && node ./generateReadingList.js",
+        "deploy": "yarn build && sleep 2 && yarn commit && git push",
+        "commit": "git commit -a -m \"Deploy Site: `date '+%Y-%m/%d %H:%M:%S'`\""
+    },
+    "devDependencies": {
+        "cheerio": "^1.0.0-rc.3",
+        "gulp": "^4.0.2",
+        "gulp-html-i18n": "^0.16.0"
+    }
 }
