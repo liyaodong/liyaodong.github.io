@@ -113,3 +113,12 @@ trainer:
   tech_lead: Tech Lead Training
   micro: Micro Front-end Training
   agile: Agile Scrum Training
+hobby:
+  name: Hobby Projects
+  contents:
+    - A series of Chrome Extensions (AI Translation, Image Upload Helper, QR Code Generator, etc.)
+    - An online NIW/EB1 visa application drafting system at quickfiling.us, using Next.js, AWS Lambda, and ChatGPT
+    - An online comics reading website, toontoonimanga.com, using Next.js, Tailwind CSS, DaisyUI, and Strapi as the CMS
+    - An online AI drawing website, maliang.app, using Next.js, Cloudflare, Discord API, and Midjourney AI
+    - A couple of automation systems for my daily work, using n8n, ChatGPT, AWS Lambda, and Telegram/Lark/Slack APIs
+    - A home lab server that includes a network gateway, firewall, NAS, media server, and smart home system

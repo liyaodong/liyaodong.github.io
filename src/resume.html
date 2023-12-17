@@ -327,11 +327,11 @@
                                 <span class="resume-skills__score">4</span>
                             </li>
                             <li>
-                                <span class="resume-skills__name">AWS/Docker/DevOps/CI</span>
+                                <span class="resume-skills__name">AWS/Docker/DevOps/CI/Serverless</span>
                                 <span class="resume-skills__score">4</span>
                             </li>
                             <li>
-                                <span class="resume-skills__name">Linux/Vim/Emacs/Git</span>
+                                <span class="resume-skills__name">Linux/Vim/Git/GPT</span>
                                 <span class="resume-skills__score">4</span>
                             </li>
                             <li>
@@ -390,6 +390,16 @@
                         <li>${{ resume.trainer.tech_lead }}$</li>
                         <li>${{ resume.trainer.micro }}$</li>
                         <li>${{ resume.trainer.agile }}$</li>
+                    </ul>
+                </div>
+                <div class="resume-body__section">
+                    <h3 class="resume-body__section__heading">
+                        ${{ resume.hobby.name }}$
+                    </h3>
+                    <ul class="resume-body__section__body session-list">
+                        ${{#resume.hobby.contents}}$
+                        <li>${{.}}$</li>
+                        ${{/resume.hobby.contents}}$
                     </ul>
                 </div>
             </div>
