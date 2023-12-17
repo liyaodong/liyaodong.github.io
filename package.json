@@ -7,6 +7,7 @@
     "scripts": {
         "start": "http-server ./ -a 127.0.0.1",
         "build": "yarn build:workbox && yarn build:reading && yarn build:lang",
+        "dev:resume": "gulp watch",
         "build:lang": "gulp && mv resume-en-US.html resume.html",
         "build:workbox": "workbox injectManifest workbox-config.js",
         "build:reading": "rsync -ru /Users/vanilla/Dropbox/notes/reading/* ./reading && rm ./reading/*.org && node ./generateReadingList.js",

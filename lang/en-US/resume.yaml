@@ -1,12 +1,13 @@
 lang: en
 title: Yaodong Li - Resume
-description: I am Yaodong Li: a web developer, blogger who love to write down my stories and some thought about software development.
+description: I am Yaodong Li, a web developer who loves convert ideas into reality.
 name: Yaodong Li
-job_title: Senior web developer
+job_title: Senior Web Developer
 about:
   title: About Me
-  content1: A web developer, blogger who love to write down my stories and some thought about software development.
-  content2: My main interest is to learn and understand how computer/information technology can change the way we live. Currently, I'm focusing on the Front-end field.
+  contents: 
+    - A web developer who loves convert ideas into reality.
+    - I'm a product-focused engineer adept at mastering new tools to tackle challenges and craft exceptional digital solutions.
 education:
   title: Education
   school: Baoji University of Arts and Sciences
@@ -14,7 +15,7 @@ education:
 skills:
   title: Skills
   communication: Communication
-  problem_solving: Problem solving
+  problem_solving: Problem Solving
   leadership: Leadership
   mentoring: Mentoring
   consulting: Consulting
@@ -23,23 +24,84 @@ language:
   detail: Mandarin Chinese/English
 session:
   title: Session Sharing
-  css_engineering: CSS engineering
-  amp: Build blazing fast website with AMP
-  fdconf: Build fast Web App by PWA and AMP - FDConf ShangHai
+  css_engineering: CSS Engineering
+  amp: Building Blazing Fast Websites with AMP
+  fdconf: Building Fast Web Apps with PWA and AMP - FDConf ShangHai
+  passwordless: Passwordless Authentication with PassKey
 project:
-  title: Project Experience
-  technology: Technology
-  booking:
-    title: Online booking system
-    content: The system is a large booking system in e-commerce field. I'm working as a Front-end tech lead in the project, mainly focus on refactoring the legacy system to Micro Front-end and react redux based SPA project. also, practice on website accessibility and performance optimization, contribute to i18n improvement and SCRUM based agile development. Work closely with the UX team to build a design system and shared component library. Build and practice training programs in Security/Front-end and Performance optimize area.
-  pandaily:
-    title: News website about China's Innovation and company database
-    content: As the only developer for this website, I'm responsible for UX design, Front-end and backend/DevOps. Except for the build and deployment step, I also working on SEO optimization and user behavior and data analytics. The project was build by <a href="https://amp.dev/" target="_blank">AMP</a> technology and has very good website performance across multiple availability zones.
-  geekpark:
-    title: Online news website
-    content: I'm responsible to develop the UI of the news system, include news/user management system, user account system, order system and the check-in system.
+  title: Work Experiences
+  technology: Tech Stack
+  role: Role
+  history:
+    - name: deepbits
+      role: Full Stack Developer
+      title: Security Chain Protect SAAS system
+      contents:
+        - As the system architecture designer, I'm responsible for the system architecture design and the development of the core system.
+        - Develop the core system using React, MaterialUI, NextJS and NodeJS
+        - Develop backend system using NodeJS, Koa and DocumentDB
+        - Implement event queue system using bullmq and redis
+        - Integrate with neo4j system to build a graphql search user experience
+        - Develop on serverless architecture to implement high performance services
+        - Build authentication and metering system to implement usage-based billing API
+      link: deepbits.com
+      date: May 2022 - Present, Remote, USA
+      tech_stack: React, NextJS, TailwindCSS, NodeJS, Koa, DocumentDB, Redis, Neo4j, AWS
+
+    - name: pandaily
+      role: CTO
+      title: Online News/Database about China's Innovation
+      contents:
+        - Oversee the entire build and deployment process to ensure efficiency
+        - Execute SEO optimization strategies for improved search engine ranking
+        - Analyze user behavior and data analytics to inform design decisions
+        - Utilize AMP technology to ensure fast loading times and high performance
+        - Maintain excellent website performance across multiple availability zones
+        - Build scale out based wordpress system to handle high traffic
+        - Integrate with third-party services, including Stripe, Mailchimp, and Google Analytics
+        - Use AI technologies like TTS, GPT, AI Translation to improve user experience
+      link: pandaily.com
+      date: Jan 2021 - Apr 2022, Remote, Beijing
+      tech_stack: React, Wordpress, NodeJS, MySQL, Postgres, AWS, Stripe
+
+    - name: airhost
+      role: Front-End Tech Lead
+      title: Online Hotel Management System
+      contents:
+        - Developed using React and Ruby on Rails, I explored a way to convert the legacy system to a React SPA page.
+        - Provided leadership and technical guidance to the team, including code reviews, pair programming, and code guidelines.
+        - Developed complex UI components in the system, including a dynamic form builder and calendars.
+      tech_stack: React, Ruby on Rails, Jest, Webpack, Docker, AWS, Typescript
+      link: airhost.sg
+      date: May 2020 - Jan 2021, Remote, Singapore
+
+    - name: booking
+      role: Front-End Tech Lead
+      title: Online Booking System
+      contents:
+        - Led the transformation of a large e-commerce booking system, transitioning from a legacy architecture to a modern React based frontend tech stack, enhancing scalability and maintainability.
+        - Directed the adoption of React and Redux for Single Page Application (SPA) development, resulting in a more responsive and user-friendly interface and improve development efficiency.
+        - Implemented best practices for web accessibility, ensuring compliance with WCAG guidelines and an inclusive user experience for all customers.
+        - Spearheaded performance optimization initiatives, significantly improving page load times and runtime efficiency across the platform.
+        - Implement and work on A-B testing system to improve the conversion rate.
+        - Advanced internationalization (i18n) features, creating a global-friendly system that supports multiple languages and cultural nuances.
+        - Collaborated with the UX team to establish a design system and shared component library, promoting consistent UI patterns and speeding up the development process.
+        - Designed and executed comprehensive training programs focused on security best practices, cutting-edge frontend technologies, and performance optimization strategies.
+      date: Oct 2016 - May 2020, ThoughtWorks Xi'an
+      tech_stack: React, Redux, Jest, C#, Webpack, Docker, Typescript, SpeedCurve, Sentry
+    - name: geekpark
+      role: Front-End Developer
+      title: Online News/Conference Website 
+      contents:
+        - I'm responsible for developing the UI of the news system, including the news/user management system, user account system, order system, and the check-in system.
+        - We're a innovation team, and we're using the latest technology to build the system, including React, Redux, and ElectronJS.
+        - Build serval cool event pages that represent our brand, including the Geekpark 2015 Conference, Geekpark 2016 Conference, and Geekpark 2016 Maker Festival.
+      link: geekpark.net
+      date: Oct 2014 - Sep 2016, Beijing
+      tech_stack: jQuery, React, Redux, Ruby on Rails, ElectronJS, Chrome Extension, Git
 trainer:
+  fe: Front-end Workshop
   title: Trainer Experience
-  tdd: TDD, Refactoring and Pair programming
-  tech_lead: Tech Lead training
-  micro: Micro Front-end training
+  tdd: TDD, Refactoring, and Pair Programming
+  tech_lead: Tech Lead Training
+  micro: Micro Front-end Training
