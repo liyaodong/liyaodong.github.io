@@ -55,14 +55,14 @@ project:
       title: Tech Media Platform Spotlighting China's technology Innovation
       contents:
         - Led a multifaceted team through comprehensive build and deployment operations, optimizing processes for peak efficiency
-        - Work closely with business stakeholders, product owners, project managers, and technical staff to ensure smooth project delivery and technical staff to ensure smooth project delivery
+        - Work closely with PO/PM and stakeholders to ensure smooth project delivery
         - Executed SEO optimization strategies for enhanced search engine ranking
         - Analyzed user behavior and data analytics to drive informed design decisions
         - Utilized AMP technology to secured fast page loading times
-        - Maintained excellent website performance across multiple availability zones
+        - Optimized performance across front-end, back-end, and database
         - Architected the scale out WordPress system for managing high traffic volumes
-        - Seamlessly integrated with third-party services, including Stripe, Mailchimp, and Google Analytics
-        - Leveraged AI technologies like TTS, GPT, AI translation strategy to propel platform user experience
+        - Seamlessly integrated with third-party services, including Stripe, Mailchimp, and GA4
+        - Leveraged AI (TTS, GPT, Translation) to propel platform user experience
       link: pandaily.com
       date: Jan 2021 - Apr 2022, Remote, Beijing
       tech_stack: React, Wordpress, Python, NodeJS, Postgres, AWS, Stripe
@@ -72,9 +72,9 @@ project:
       title: Cloud-based Hospitality Business Management System
       contents:
         - Spearheaded the front-end development team, driving project milestones, architected scalable and maintainable front-end frameworks
-        - Utilized React and Ruby on Rails, Innovated the way to transform the legacy system to a React SPA page
+        - Utilized React and Ruby on Rails to migrate the legacy system to a React SPA page
         - Offered expert leadership and technical direction, encompassing meticulous code reviews, pair programming, and the coding guidelines setup
-        - Developed complex UI components in the system, including a dynamic form builder and calendars
+        - Developed the complex UI components (dynamic form builder and calendar)
         - Actively engaged in troubleshooting and resolving complex technical issues, ensuring stability and performance of the platform
       tech_stack: React, Ruby on Rails, Jest, Webpack, Docker, AWS, Typescript
       link: airhost.sg
@@ -82,17 +82,15 @@ project:
 
     - name: booking
       role: Front-end Tech Lead
-      title: A prominent international airline(Name withheld due to confidentiality agreement)
+      title: A prominent international airline platform (Name withheld due to confidentiality agreement)
       contents:
-        - Led the transformation of a large e-commerce booking system, transitioning from a legacy architecture to a modern React based frontend tech stack, enhancing scalability and maintainability.
-        - Directed the adoption of React and Redux for Single Page Application (SPA) development, resulting in a more responsive and user-friendly interface and improve development efficiency.
-        - Implemented best practices for web accessibility, ensuring compliance with WCAG guidelines and an inclusive user experience for all customers.
-        - Spearheaded performance optimization initiatives, significantly improving page load times and runtime efficiency across the platform.
-        - Advanced internationalization (i18n) features, creating a global-friendly system that supports multiple languages and cultural nuances.
-        - Collaborated with the UX team to establish a design system and shared component library, promoting consistent UI patterns and speeding up the development process.
-        - Designed and executed comprehensive training programs focused on security best practices, cutting-edge frontend technologies, and performance optimization strategies.
+        - Led the migration of a large legacy e-commerce booking system to a modern React, Redux, and SPA frontend architecture
+        - Designed and enforced security best practices, technology training programs, and performance optimization 
+        - Implemented best practices for web accessibility, ensuring compliance with WCAG guidelines 
+        - Designed the React based i18n architecture to support legacy dotnet MVC system
+        - Collaborated with UX for the consistent design system and shared component library
         - Implemented the A/B testing strategy to enhance the conversion rate systematically
-        - Mentored junior developers through code reviews, one-on-one sessions, and targeted training initiatives(front-end workshop, team sessions) to build a high-caliber front-end team
+        - Mentored junior developers, enhancing front-end team skills through code reviews, session, and workshops 
         - Conducted comprehensive interviews across junior and senior levels to assess qualifications and fit for various technical roles
       date: Oct 2016 - May 2020, ThoughtWorks Xi'an
       tech_stack: React, Redux, Jest, C#, Webpack, Docker, Typescript, SpeedCurve, Sentry
@@ -116,9 +114,9 @@ trainer:
 hobby:
   name: Hobby Projects
   contents:
-    - A series of Chrome Extensions (AI Translation, Image Upload Helper, QR Code Generator, etc.)
     - An online NIW/EB1 visa application drafting system at quickfiling.us, using Next.js, AWS Lambda, and ChatGPT
-    - An online comics reading website, toontoonimanga.com, using Next.js, Tailwind CSS, DaisyUI, and Strapi as the CMS
     - An online AI drawing website, maliang.app, using Next.js, Cloudflare, Discord API, and Midjourney AI
-    - A couple of automation systems for my daily work, using n8n, ChatGPT, AWS Lambda, and Telegram/Lark/Slack APIs
+    - An online comics reading website, toontoonimanga.com, using Next.js, Tailwind CSS, DaisyUI, and Strapi as the CMS
+    - A series of automation systems for my daily work, using n8n, ChatGPT, AWS Lambda, and Telegram/Lark/Slack APIs
     - A home lab server that includes a network gateway, firewall, NAS, media server, and smart home system
+    - A series of Chrome extensions (AI Translation, Image Upload Helper, QR Code Generator, etc.)

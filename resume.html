@@ -93,7 +93,7 @@
         }
 
         .resume-body {
-            padding: 20px 30px;
+            padding: 20px;
             display: flex;
         }
 
@@ -102,7 +102,7 @@
         }
 
         .resume-body__side:not(.resume-body__side--main) {
-            max-width: 250px;
+            max-width: 260px;
         }
 
         .resume-body__side--main {
@@ -110,7 +110,7 @@
         }
 
         .resume-body__section {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .resume-body__section__heading {
@@ -137,8 +137,8 @@
         }
 
         .resume-project-experience__item {
-            margin-bottom: 15px;
             padding: 5px;
+            margin-bottom: 5px;
         }
 
         .resume-project-experience__item ul {
@@ -160,6 +160,7 @@
 
         .resume-project-experience__item__stack {
             font-weight: 600;
+            margin: 5px 0;
         }
 
         .resume-project-experience__item__title {
@@ -169,8 +170,8 @@
 
         .resume-project-experience__item__heading__part {
             margin-top: 3px;
-            font-size: 14px;
-            color: #666;
+            font-size: 13px;
+            color: #222;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -306,11 +307,7 @@
                     <div class="resume-body__section__body">
                         <ul class="resume-skills__list">
                             <li>
-                                <span class="resume-skills__name">JavaScript/TypeScript</span>
-                                <span class="resume-skills__score">5</span>
-                            </li>
-                            <li>
-                                <span class="resume-skills__name">HTML/CSS/PWA</span>
+                                <span class="resume-skills__name">JS/TS/HTML/CSS/PWA</span>
                                 <span class="resume-skills__score">5</span>
                             </li>
                             <li>
@@ -339,10 +336,6 @@
                             </li>
                             <li>
                                 <span class="resume-skills__name">UX/UI Design/Figma/PhotoShop</span>
-                                <span class="resume-skills__score">4</span>
-                            </li>
-                            <li>
-                                <span class="resume-skills__name">Interviewer/Team Building</span>
                                 <span class="resume-skills__score">4</span>
                             </li>
                             <li>
@@ -394,12 +387,12 @@
                         Hobby Projects
                     </h3>
                     <ul class="resume-body__section__body session-list">
-                        <li>A series of Chrome Extensions (AI Translation, Image Upload Helper, QR Code Generator, etc.)</li>
                         <li>An online NIW&#x2F;EB1 visa application drafting system at quickfiling.us, using Next.js, AWS Lambda, and ChatGPT</li>
-                        <li>An online comics reading website, toontoonimanga.com, using Next.js, Tailwind CSS, DaisyUI, and Strapi as the CMS</li>
                         <li>An online AI drawing website, maliang.app, using Next.js, Cloudflare, Discord API, and Midjourney AI</li>
-                        <li>A couple of automation systems for my daily work, using n8n, ChatGPT, AWS Lambda, and Telegram&#x2F;Lark&#x2F;Slack APIs</li>
+                        <li>An online comics reading website, toontoonimanga.com, using Next.js, Tailwind CSS, DaisyUI, and Strapi as the CMS</li>
+                        <li>A series of automation systems for my daily work, using n8n, ChatGPT, AWS Lambda, and Telegram&#x2F;Lark&#x2F;Slack APIs</li>
                         <li>A home lab server that includes a network gateway, firewall, NAS, media server, and smart home system</li>
+                        <li>A series of Chrome extensions (AI Translation, Image Upload Helper, QR Code Generator, etc.)</li>
                     </ul>
                 </div>
             </div>
@@ -433,9 +426,8 @@
                                     <li>- Built the authentication and metering system to implement usage-based billing API</li>
                                     <li>- Introduced agile development and facilitated scrum events</li>
                                 </ul>
-                                <p>
-                                    <span
-                                        class="resume-project-experience__item__stack">Tech Stack:</span>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
                                     React, NextJS, TailwindCSS, NodeJS, Koa, DocumentDB, Redis, Neo4j, AWS
                                 </p>
                             </div>
@@ -452,18 +444,17 @@
                                 </div>
                                 <ul>
                                     <li>- Led a multifaceted team through comprehensive build and deployment operations, optimizing processes for peak efficiency</li>
-                                    <li>- Work closely with business stakeholders, product owners, project managers, and technical staff to ensure smooth project delivery and technical staff to ensure smooth project delivery</li>
+                                    <li>- Work closely with PO&#x2F;PM and stakeholders to ensure smooth project delivery</li>
                                     <li>- Executed SEO optimization strategies for enhanced search engine ranking</li>
                                     <li>- Analyzed user behavior and data analytics to drive informed design decisions</li>
                                     <li>- Utilized AMP technology to secured fast page loading times</li>
-                                    <li>- Maintained excellent website performance across multiple availability zones</li>
+                                    <li>- Optimized performance across front-end, back-end, and database</li>
                                     <li>- Architected the scale out WordPress system for managing high traffic volumes</li>
-                                    <li>- Seamlessly integrated with third-party services, including Stripe, Mailchimp, and Google Analytics</li>
-                                    <li>- Leveraged AI technologies like TTS, GPT, AI translation strategy to propel platform user experience</li>
+                                    <li>- Seamlessly integrated with third-party services, including Stripe, Mailchimp, and GA4</li>
+                                    <li>- Leveraged AI (TTS, GPT, Translation) to propel platform user experience</li>
                                 </ul>
-                                <p>
-                                    <span
-                                        class="resume-project-experience__item__stack">Tech Stack:</span>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
                                     React, Wordpress, Python, NodeJS, Postgres, AWS, Stripe
                                 </p>
                             </div>
@@ -480,21 +471,20 @@
                                 </div>
                                 <ul>
                                     <li>- Spearheaded the front-end development team, driving project milestones, architected scalable and maintainable front-end frameworks</li>
-                                    <li>- Utilized React and Ruby on Rails, Innovated the way to transform the legacy system to a React SPA page</li>
+                                    <li>- Utilized React and Ruby on Rails to migrate the legacy system to a React SPA page</li>
                                     <li>- Offered expert leadership and technical direction, encompassing meticulous code reviews, pair programming, and the coding guidelines setup</li>
-                                    <li>- Developed complex UI components in the system, including a dynamic form builder and calendars</li>
+                                    <li>- Developed the complex UI components (dynamic form builder and calendar)</li>
                                     <li>- Actively engaged in troubleshooting and resolving complex technical issues, ensuring stability and performance of the platform</li>
                                 </ul>
-                                <p>
-                                    <span
-                                        class="resume-project-experience__item__stack">Tech Stack:</span>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
                                     React, Ruby on Rails, Jest, Webpack, Docker, AWS, Typescript
                                 </p>
                             </div>
                             <div class="resume-project-experience__item">
                                 <div class="resume-project-experience__item__heading">
                                     <div class="resume-project-experience__item__heading__part">
-                                        <span class="resume-project-experience__item__title">A prominent international airline(Name withheld due to confidentiality agreement)</span>
+                                        <span class="resume-project-experience__item__title">A prominent international airline platform (Name withheld due to confidentiality agreement)</span>
                                         <a href="https://" target="_blank" rel="noopener"></a>
                                     </div>
                                     <div class="resume-project-experience__item__heading__part">
@@ -503,20 +493,17 @@
                                     </div>
                                 </div>
                                 <ul>
-                                    <li>- Led the transformation of a large e-commerce booking system, transitioning from a legacy architecture to a modern React based frontend tech stack, enhancing scalability and maintainability.</li>
-                                    <li>- Directed the adoption of React and Redux for Single Page Application (SPA) development, resulting in a more responsive and user-friendly interface and improve development efficiency.</li>
-                                    <li>- Implemented best practices for web accessibility, ensuring compliance with WCAG guidelines and an inclusive user experience for all customers.</li>
-                                    <li>- Spearheaded performance optimization initiatives, significantly improving page load times and runtime efficiency across the platform.</li>
-                                    <li>- Advanced internationalization (i18n) features, creating a global-friendly system that supports multiple languages and cultural nuances.</li>
-                                    <li>- Collaborated with the UX team to establish a design system and shared component library, promoting consistent UI patterns and speeding up the development process.</li>
-                                    <li>- Designed and executed comprehensive training programs focused on security best practices, cutting-edge frontend technologies, and performance optimization strategies.</li>
+                                    <li>- Led the migration of a large legacy e-commerce booking system to a modern React, Redux, and SPA frontend architecture</li>
+                                    <li>- Designed and enforced security best practices, technology training programs, and performance optimization</li>
+                                    <li>- Implemented best practices for web accessibility, ensuring compliance with WCAG guidelines</li>
+                                    <li>- Designed the React based i18n architecture to support legacy dotnet MVC system</li>
+                                    <li>- Collaborated with UX for the consistent design system and shared component library</li>
                                     <li>- Implemented the A&#x2F;B testing strategy to enhance the conversion rate systematically</li>
-                                    <li>- Mentored junior developers through code reviews, one-on-one sessions, and targeted training initiatives(front-end workshop, team sessions) to build a high-caliber front-end team</li>
+                                    <li>- Mentored junior developers, enhancing front-end team skills through code reviews, session, and workshops</li>
                                     <li>- Conducted comprehensive interviews across junior and senior levels to assess qualifications and fit for various technical roles</li>
                                 </ul>
-                                <p>
-                                    <span
-                                        class="resume-project-experience__item__stack">Tech Stack:</span>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
                                     React, Redux, Jest, C#, Webpack, Docker, Typescript, SpeedCurve, Sentry
                                 </p>
                             </div>
@@ -536,9 +523,8 @@
                                     <li>- Leveraged the latest cutting-edge technologies such as React, Redux, and ElectronJS to build the system</li>
                                     <li>- Built and launched a series of fancy events pages that represent our brand essence</li>
                                 </ul>
-                                <p>
-                                    <span
-                                        class="resume-project-experience__item__stack">Tech Stack:</span>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
                                     jQuery, React, Redux, Ruby on Rails, ElectronJS, Chrome Extension, Git
                                 </p>
                             </div>

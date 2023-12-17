@@ -93,7 +93,7 @@
         }
 
         .resume-body {
-            padding: 20px 30px;
+            padding: 20px;
             display: flex;
         }
 
@@ -102,7 +102,7 @@
         }
 
         .resume-body__side:not(.resume-body__side--main) {
-            max-width: 250px;
+            max-width: 260px;
         }
 
         .resume-body__side--main {
@@ -110,7 +110,7 @@
         }
 
         .resume-body__section {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .resume-body__section__heading {
@@ -137,8 +137,8 @@
         }
 
         .resume-project-experience__item {
-            margin-bottom: 15px;
             padding: 5px;
+            margin-bottom: 5px;
         }
 
         .resume-project-experience__item ul {
@@ -160,6 +160,7 @@
 
         .resume-project-experience__item__stack {
             font-weight: 600;
+            margin: 5px 0;
         }
 
         .resume-project-experience__item__title {
@@ -169,8 +170,8 @@
 
         .resume-project-experience__item__heading__part {
             margin-top: 3px;
-            font-size: 14px;
-            color: #666;
+            font-size: 13px;
+            color: #222;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -307,11 +308,7 @@
                     <div class="resume-body__section__body">
                         <ul class="resume-skills__list">
                             <li>
-                                <span class="resume-skills__name">JavaScript/TypeScript</span>
-                                <span class="resume-skills__score">5</span>
-                            </li>
-                            <li>
-                                <span class="resume-skills__name">HTML/CSS/PWA</span>
+                                <span class="resume-skills__name">JS/TS/HTML/CSS/PWA</span>
                                 <span class="resume-skills__score">5</span>
                             </li>
                             <li>
@@ -340,10 +337,6 @@
                             </li>
                             <li>
                                 <span class="resume-skills__name">UX/UI Design/Figma/PhotoShop</span>
-                                <span class="resume-skills__score">4</span>
-                            </li>
-                            <li>
-                                <span class="resume-skills__name">Interviewer/Team Building</span>
                                 <span class="resume-skills__score">4</span>
                             </li>
                             <li>
@@ -429,9 +422,8 @@
                                     <li>- ${{.}}$</li>
                                     ${{/contents}}$
                                 </ul>
-                                <p>
-                                    <span
-                                        class="resume-project-experience__item__stack">${{resume.project.technology}}$:</span>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>${{resume.project.technology}}$:</span>
                                     ${{tech_stack}}$
                                 </p>
                             </div>
