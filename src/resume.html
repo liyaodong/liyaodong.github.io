@@ -208,6 +208,10 @@
         }
 
         @media print {
+            .resume {
+                background-color: transparent;
+            }
+
             .resume-header {
                 background-color: transparent;
                 color: #000;
@@ -220,6 +224,13 @@
             .resume-project-experience__item__heading {
                 text-decoration: underline;
                 padding: 0;
+            }
+
+
+            .resume-body__side:not(.resume-body__side--main) .resume-body__section,
+            .resume-project-experience__item,
+            .avoid-page-break {
+                page-break-inside: avoid;
             }
         }
     </style>
