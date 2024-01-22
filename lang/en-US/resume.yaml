@@ -21,7 +21,7 @@ skills:
   consulting: Consulting
 language:
   title: Language
-  detail: Mandarin Chinese/English(PTE 7)
+  detail: Mandarin Chinese / English (PTE 7)
 session:
   title: Community Session Sharing
   css_engineering: CSS Engineering
@@ -82,9 +82,11 @@ project:
 
     - name: booking
       role: Front-end Tech Lead
-      title: ThoughtWorks - A prominent international airline platform (Name withheld due to confidentiality agreement)
+      title: ThoughtWorks
+      link: thoughtworks.com
       contents:
-        - Led the migration of a large legacy e-commerce booking system to a modern React, Redux, and SPA frontend architecture
+        - "About the project - Prominent international airline platform (Name withheld due to confidentiality agreement)"
+        - Led the migration of a large legacy e-commerce booking system to a modern React, Redux, and SPA front-end architecture
         - Designed and enforced security best practices, technology training programs, and performance optimization 
         - Implemented best practices for web accessibility, ensuring compliance with WCAG guidelines 
         - Designed the React based i18n architecture to support legacy dotnet MVC system
@@ -95,8 +97,8 @@ project:
       date: Oct 2016 - May 2020, ThoughtWorks Xi'an
       tech_stack: React, Redux, Jest, C#, Webpack, Docker, Typescript, SpeedCurve, Sentry
     - name: geekpark
-      role: Front-End Developer
-      title: GeekPark - Online News/Conference booking Website 
+      role: Front-end Developer
+      title: GeekPark
       contents:
         - Developed the UI of the news system, encompassing the news/user management system, user account system, order system, and the check-in system.
         - Leveraged the latest cutting-edge technologies such as React, Redux, and ElectronJS to build the system
@@ -120,3 +122,5 @@ hobby:
     - A series of automation systems for my daily work, using n8n, ChatGPT, AWS Lambda, and Telegram/Lark/Slack APIs
     - A home lab server that includes a network gateway, firewall, NAS, media server, and smart home system
     - A series of Chrome extensions (AI Translation, Image Upload Helper, QR Code Generator, etc.)
+experience:
+  name: Experience

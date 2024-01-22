@@ -151,7 +151,7 @@
 
         .resume-project-experience__item__heading {
             background-color: #e3e3e3;
-            padding: 3px 5px;
+            padding: 3px 5px 4px 5px;
         }
 
         .resume-project-experience__item__heading a {
@@ -215,6 +215,13 @@
             .resume-header {
                 background-color: transparent;
                 color: #000;
+                border-bottom: 1px solid #aaa;
+                border-radius: 0;
+                padding: 10px 30px;
+            }
+
+            .resume-body {
+                padding: 10px 20px;
             }
 
             .resume-social a {
@@ -223,7 +230,6 @@
 
             .resume-project-experience__item__heading {
                 text-decoration: underline;
-                padding: 0;
             }
 
 
@@ -298,8 +304,25 @@
                         About Me
                     </h3>
                     <div class="resume-body__section__body">
-                        <p>A passionate front-end engineer who loves turning ideas into reality.</p>
-                        <p>I&#39;m a product-centric engineer, proficient in swiftly mastering new tools to tackle challenges and craft exceptional digital solutions.</p>
+                        <p style="margin-top: 6px; margin-bottom: 6px;">A passionate front-end engineer who loves turning ideas into reality.</p>
+                        <p style="margin-top: 6px; margin-bottom: 6px;">I&#39;m a product-centric engineer, proficient in swiftly mastering new tools to tackle challenges and craft exceptional digital solutions.</p>
+                    </div>
+                </div>
+                <div class="resume-body__section">
+                    <h3 class="resume-body__section__heading">
+                        Experience
+                    </h3>
+                    <div class="resume-body__section__body">
+                        <span id="experience-years"></span>+ years experience on web development
+                        <script>
+                            // Calculate years by current date minus 2014-10
+                            var currentDate = new Date();
+                            var targetDate = new Date('2014-10');
+                            var diffInMilliseconds = currentDate - targetDate;
+                            var diffInYears = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 365.25));
+
+                            document.querySelector('#experience-years').innerText = diffInYears;
+                        </script>
                     </div>
                 </div>
                 <div class="resume-body__section">
@@ -365,7 +388,7 @@
                         Language
                     </h3>
                     <div class="resume-body__section__body">
-                        Mandarin Chinese&#x2F;English(PTE 7)
+                        Mandarin Chinese &#x2F; English (PTE 7)
                     </div>
                 </div>
                 <div class="resume-body__section">
@@ -383,18 +406,6 @@
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        Trainer Experience
-                    </h3>
-                    <ul class="resume-body__section__body session-list">
-                        <li>Interactive Front-end Mastery Workshop</li>
-                        <li>TDD, Refactoring, and Pair Programming</li>
-                        <li>Tech Lead Training</li>
-                        <li>Micro Front-end Training</li>
-                        <li>Agile Scrum Training</li>
-                    </ul>
-                </div>
-                <div class="resume-body__section">
-                    <h3 class="resume-body__section__heading">
                         Hobby Projects
                     </h3>
                     <ul class="resume-body__section__body session-list">
@@ -404,6 +415,18 @@
                         <li>A series of automation systems for my daily work, using n8n, ChatGPT, AWS Lambda, and Telegram&#x2F;Lark&#x2F;Slack APIs</li>
                         <li>A home lab server that includes a network gateway, firewall, NAS, media server, and smart home system</li>
                         <li>A series of Chrome extensions (AI Translation, Image Upload Helper, QR Code Generator, etc.)</li>
+                    </ul>
+                </div>
+                <div class="resume-body__section">
+                    <h3 class="resume-body__section__heading">
+                        Trainer Experience
+                    </h3>
+                    <ul class="resume-body__section__body session-list">
+                        <li>Interactive Front-end Mastery Workshop</li>
+                        <li>TDD, Refactoring, and Pair Programming</li>
+                        <li>Tech Lead Training</li>
+                        <li>Micro Front-end Training</li>
+                        <li>Agile Scrum Training</li>
                     </ul>
                 </div>
             </div>
@@ -495,8 +518,8 @@
                             <div class="resume-project-experience__item">
                                 <div class="resume-project-experience__item__heading">
                                     <div class="resume-project-experience__item__heading__part">
-                                        <span class="resume-project-experience__item__title">ThoughtWorks - A prominent international airline platform (Name withheld due to confidentiality agreement)</span>
-                                        <a href="https://" target="_blank" rel="noopener"></a>
+                                        <span class="resume-project-experience__item__title">ThoughtWorks</span>
+                                        <a href="https://thoughtworks.com" target="_blank" rel="noopener">thoughtworks.com</a>
                                     </div>
                                     <div class="resume-project-experience__item__heading__part">
                                         <span class="resume-project-experience__item__date">Oct 2016 - May 2020, ThoughtWorks Xi&#39;an</span>
@@ -504,7 +527,8 @@
                                     </div>
                                 </div>
                                 <ul>
-                                    <li>- Led the migration of a large legacy e-commerce booking system to a modern React, Redux, and SPA frontend architecture</li>
+                                    <li>- About the project - Prominent international airline platform (Name withheld due to confidentiality agreement)</li>
+                                    <li>- Led the migration of a large legacy e-commerce booking system to a modern React, Redux, and SPA front-end architecture</li>
                                     <li>- Designed and enforced security best practices, technology training programs, and performance optimization</li>
                                     <li>- Implemented best practices for web accessibility, ensuring compliance with WCAG guidelines</li>
                                     <li>- Designed the React based i18n architecture to support legacy dotnet MVC system</li>
@@ -521,12 +545,12 @@
                             <div class="resume-project-experience__item">
                                 <div class="resume-project-experience__item__heading">
                                     <div class="resume-project-experience__item__heading__part">
-                                        <span class="resume-project-experience__item__title">GeekPark - Online News&#x2F;Conference booking Website</span>
+                                        <span class="resume-project-experience__item__title">GeekPark</span>
                                         <a href="https://geekpark.net" target="_blank" rel="noopener">geekpark.net</a>
                                     </div>
                                     <div class="resume-project-experience__item__heading__part">
                                         <span class="resume-project-experience__item__date">Oct 2014 - Sep 2016, Beijing</span>
-                                        Front-End Developer
+                                        Front-end Developer
                                     </div>
                                 </div>
                                 <ul>

@@ -151,7 +151,7 @@
 
         .resume-project-experience__item__heading {
             background-color: #e3e3e3;
-            padding: 3px 5px;
+            padding: 3px 5px 4px 5px;
         }
 
         .resume-project-experience__item__heading a {
@@ -215,6 +215,13 @@
             .resume-header {
                 background-color: transparent;
                 color: #000;
+                border-bottom: 1px solid #aaa;
+                border-radius: 0;
+                padding: 10px 30px;
+            }
+
+            .resume-body {
+                padding: 10px 20px;
             }
 
             .resume-social a {
@@ -223,7 +230,6 @@
 
             .resume-project-experience__item__heading {
                 text-decoration: underline;
-                padding: 0;
             }
 
 
@@ -299,8 +305,25 @@
                     </h3>
                     <div class="resume-body__section__body">
                         ${{#resume.about.contents}}$
-                        <p>${{.}}$</p>
+                        <p style="margin-top: 6px; margin-bottom: 6px;">${{.}}$</p>
                         ${{/resume.about.contents}}$
+                    </div>
+                </div>
+                <div class="resume-body__section">
+                    <h3 class="resume-body__section__heading">
+                        ${{ resume.experience.name }}$
+                    </h3>
+                    <div class="resume-body__section__body">
+                        <span id="experience-years"></span>+ years experience on web development
+                        <script>
+                            // Calculate years by current date minus 2014-10
+                            var currentDate = new Date();
+                            var targetDate = new Date('2014-10');
+                            var diffInMilliseconds = currentDate - targetDate;
+                            var diffInYears = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 365.25));
+
+                            document.querySelector('#experience-years').innerText = diffInYears;
+                        </script>
                     </div>
                 </div>
                 <div class="resume-body__section">
@@ -386,6 +409,16 @@
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
+                        ${{ resume.hobby.name }}$
+                    </h3>
+                    <ul class="resume-body__section__body session-list">
+                        ${{#resume.hobby.contents}}$
+                        <li>${{.}}$</li>
+                        ${{/resume.hobby.contents}}$
+                    </ul>
+                </div>
+                <div class="resume-body__section">
+                    <h3 class="resume-body__section__heading">
                         ${{ resume.trainer.title }}$
                     </h3>
                     <ul class="resume-body__section__body session-list">
@@ -394,16 +427,6 @@
                         <li>${{ resume.trainer.tech_lead }}$</li>
                         <li>${{ resume.trainer.micro }}$</li>
                         <li>${{ resume.trainer.agile }}$</li>
-                    </ul>
-                </div>
-                <div class="resume-body__section">
-                    <h3 class="resume-body__section__heading">
-                        ${{ resume.hobby.name }}$
-                    </h3>
-                    <ul class="resume-body__section__body session-list">
-                        ${{#resume.hobby.contents}}$
-                        <li>${{.}}$</li>
-                        ${{/resume.hobby.contents}}$
                     </ul>
                 </div>
             </div>

@@ -1,470 +1,485 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <title>Yaodong Li</title>
-        <link rel="manifest" href="/manifest.webmanifest">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.8/pwacompat.min.js"
-                integrity="sha384-uONtBTCBzHKF84F6XvyC8S0gL8HTkAPeCyBNvfLfsqHh+Kd6s/kaS4BdmNQ5ktp1"
-                crossorigin="anonymous"></script>
-        <script data-ad-client="ca-pub-8179398349534744" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    </head>
-    <style>
-     body {
-         margin: 0;
-         padding: 0;
-         font-size: 16px;
-         font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;
-         font-weight: 400;
-         background-color: #F9F8F0;
-         color: #2E2E2E;
-         box-sizing: border-box;
-         -webkit-overflow-scrolling: touch;
-         -webkit-font-smoothing: antialiased;
-     }
 
-     ul {
-         margin: 0;
-         padding: 0;
-     }
+<head>
+    <meta charset="UTF-8" />
+    <title>Yaodong Li</title>
+    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.8/pwacompat.min.js"
+        integrity="sha384-uONtBTCBzHKF84F6XvyC8S0gL8HTkAPeCyBNvfLfsqHh+Kd6s/kaS4BdmNQ5ktp1"
+        crossorigin="anonymous"></script>
+    <script data-ad-client="ca-pub-8179398349534744" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Heiti SC", "Microsoft YaHei UI", "Microsoft YaHei", "Source Han Sans", sans-serif;
+        font-weight: 400;
+        background-color: #F9F8F0;
+        color: #2E2E2E;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+        -webkit-font-smoothing: antialiased;
+    }
 
-     li {
-         list-style-type: none;
-     }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
 
-     .subsite {
-         display: none;
-     }
+    li {
+        list-style-type: none;
+    }
 
-     .hide {
-         display: none;
-     }
+    .subsite {
+        display: none;
+    }
 
-     body:not([data-subsite="home"]) .site-home {
-         display: none;
-     }
+    .hide {
+        display: none;
+    }
 
-     body[data-subsite="blog"] .subsite--blog,
-     body[data-subsite^="posts"] .subsite--post,
-     body[data-subsite="photos"] .subsite--photos,
-     body[data-subsite="reading"] .subsite--reading,
-     body[data-subsite="slides"] .subsite--slides {
-         display: flex;
-         flex-direction: column;
-     }
+    body:not([data-subsite="home"]) .site-home {
+        display: none;
+    }
 
-     .subsite {
-         min-height: 100vh;
-     }
+    body[data-subsite="blog"] .subsite--blog,
+    body[data-subsite^="posts"] .subsite--post,
+    body[data-subsite="photos"] .subsite--photos,
+    body[data-subsite="reading"] .subsite--reading,
+    body[data-subsite="slides"] .subsite--slides {
+        display: flex;
+        flex-direction: column;
+    }
 
-     .subsite__back {
-         position: fixed;
-         right: 6%;
-         bottom: 3%;
-         width: 50px;
-         height: 50px;
-         background: #4d88f5 url(./images/back.svg) center center no-repeat;
-         background-size: 32px 32px;
-         border-radius: 50%;
-         box-shadow: 0px 2px 10px rgba(0, 0, 0, .3);
-     }
+    .subsite {
+        min-height: 100vh;
+    }
 
-     .subsite__hero {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         min-height: 50vw;
-         position: relative;
-         overflow: hidden;
-     }
+    .subsite__back {
+        position: fixed;
+        right: 6%;
+        bottom: 3%;
+        width: 50px;
+        height: 50px;
+        background: #4d88f5 url(./images/back.svg) center center no-repeat;
+        background-size: 32px 32px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, .3);
+    }
 
-     .subsite__hero::after {
-         content: "";
-         position: absolute;
-         left: 0;
-         top: 0;
-         width: 100%;
-         height: 100%;
-         background-size: cover;
-         background-position: center bottom;
-         background-repeat: no-repeat;
-         z-index: -1;
-     }
+    .subsite__hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vw;
+        position: relative;
+        overflow: hidden;
+    }
 
-     .subsite__body {
-         padding: 15px;
-         margin: 0 auto;
-     }
+    .subsite__hero::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
 
-     .subsite__body.wip {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         flex-grow: 1;
-         font-size: 30px;
-     }
+    .subsite__body {
+        padding: 15px;
+        margin: 0 auto;
+    }
 
-     .subsite--blog {
-     }
+    .subsite__body.wip {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        font-size: 30px;
+    }
 
-     .subsite--blog .article-item,
-     .subsite--blog__placeholder:not(:last-of-type) {
-         margin-bottom: 30px;
-         padding-bottom: 30px;
-         border-bottom: 1px solid #E0E0E0;
-     }
+    .subsite--blog {}
 
-     .subsite--blog__placeholder-title {
-         background-color: #E0E0E0;
-         height: 20px;
-         width: 40%;
-     }
+    .subsite--blog .article-item,
+    .subsite--blog__placeholder:not(:last-of-type) {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #E0E0E0;
+    }
 
-     .subsite--blog__placeholder-desc-small,
-     .subsite--blog__placeholder-desc-large {
-         background-color: #ECECEC;
-         height: 15px;
-         margin-top: 15px;
-     }
+    .subsite--blog__placeholder-title {
+        background-color: #E0E0E0;
+        height: 20px;
+        width: 40%;
+    }
 
-     .subsite--blog__placeholder-desc-small {
-         width: 65%;
-     }
+    .subsite--blog__placeholder-desc-small,
+    .subsite--blog__placeholder-desc-large {
+        background-color: #ECECEC;
+        height: 15px;
+        margin-top: 15px;
+    }
 
-     .subsite--blog__placeholder-desc-large {
-         width: 80%;
-     }
+    .subsite--blog__placeholder-desc-small {
+        width: 65%;
+    }
 
-     .subsite--blog .subsite__body {
-         flex-grow: 1;
-         position: relative;
-         width: 100%;
-         margin: 0;
-     }
+    .subsite--blog__placeholder-desc-large {
+        width: 80%;
+    }
 
-     .blog-iframe {
-         position: absolute;
-         left: 0;
-         top: 0;
-         width: 100%;
-         height: 100%;
-     }
+    .subsite--blog .subsite__body {
+        flex-grow: 1;
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
 
-     .subsite--blog__more {
-         text-align: center;
-         display: inline-block;
-         color: #fff;
-         padding: 5px 10px;
-         text-decoration: none;
-         background-color: #000;
-         margin-bottom: 15px;
-     }
+    .blog-iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
 
-     .wrapper {
-         height: 100vh;
-         overflow-y: auto;
-         overflow-x: hidden;
-         perspective: 2px
-     }
+    .subsite--blog__more {
+        text-align: center;
+        display: inline-block;
+        color: #fff;
+        padding: 5px 10px;
+        text-decoration: none;
+        background-color: #000;
+        margin-bottom: 15px;
+    }
 
-     .site-screen {
-         text-align: center;
-         min-height: 100vh;
-         margin: 0 auto;
-         position: relative;
-     }
+    .wrapper {
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        perspective: 2px
+    }
 
-     .site-screen--first {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-         position: relative;
-     }
+    .site-screen {
+        text-align: center;
+        min-height: 100vh;
+        margin: 0 auto;
+        position: relative;
+    }
 
-     @media screen and (max-width: 719px) {
-         .site-screen--first::after {
-             content: "";
-             position: absolute;
-             top: 0;
-             right: 0;
-             bottom: 0;
-             left: 0;
+    .site-screen--first {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
 
-             background: url('./images/bg.jpg') center center no-repeat;
-             background-size: cover;
-             transform: translateZ(-1px) scale(1.56);
-             z-index: -1;
-         }
-     }
+    @media screen and (max-width: 719px) {
+        .site-screen--first::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
 
-     .site-name {
-         font-weight: 400;
-         font-size: 24px;
-         margin-bottom: 0;
-     }
+            background: url('./images/bg.jpg') center center no-repeat;
+            background-size: cover;
+            transform: translateZ(-1px) scale(1.56);
+            z-index: -1;
+        }
+    }
 
-     .site-name__nickname {
-         font-size: 12px;
-         font-weight: 400;
-         margin-top: 0;
-         color: #939393;
-     }
+    .site-name {
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 0;
+    }
 
-     .hobby-list {
-         display: flex;
-         font-size: 14px;
-     }
+    .site-name__nickname {
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 0;
+        color: #939393;
+    }
 
-     .hobby-list li:not(:last-child)::after {
-         content: "/";
-     }
+    .hobby-list {
+        display: flex;
+        font-size: 14px;
+    }
 
-     .site-introduce {
-         font-size: 36px;
-         text-align: right;
-     }
+    .hobby-list li:not(:last-child)::after {
+        content: "/";
+    }
 
-     .site-introduce__highlight {
-         font-size: 50px;
-         font-style: normal;
-     }
+    .site-introduce {
+        font-size: 36px;
+        text-align: right;
+    }
 
-     .site-screen--second {
-         perspective: none;
-         position: relative;
-         height: 100vh;
-     }
+    .site-introduce__highlight {
+        font-size: 50px;
+        font-style: normal;
+    }
 
-     .subsite-list {
-         display: flex;
-         flex-direction: column;
-         height: 100%;
-         transform: scaleY(.97);
-     }
+    .site-screen--second {
+        perspective: none;
+        position: relative;
+        height: 100vh;
+    }
 
-     .subsite-list__item {
-         height: 25%;
-         position: relative;
-     }
+    .subsite-list {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transform: scaleY(.97);
+    }
 
-     .subsite-list__item::after {
-         content: "";
-         position: absolute;
-         left: 0;
-         top: 0;
-         width: 100%;
-         height: 100%;
-         background-size: 100% auto;
-         background-position: center center;
-         transform: skewY(-3deg);
-         z-index: -1;
-     }
+    .subsite-list__item {
+        height: 25%;
+        position: relative;
+    }
 
-     @keyframes bgGradient {
-         0% {
-             background-position: 0% 50%
-         }
-         50% {
-             background-position: 100% 50%
-         }
-         100% {
-             background-position: 0% 50%
-         }
-     }
+    .subsite-list__item::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: 100% auto;
+        background-position: center center;
+        transform: skewY(-3deg);
+        z-index: -1;
+    }
 
-     .subsite--blog .subsite__hero::after,
-     .subsite-list__item--blog::after {
-         background-image: url('./images/house.jpg');
-     }
-     .subsite--photos .subsite__hero::after,
-     .subsite-list__item--photos::after {
-         background-image: url('./images/cat.jpg');
-     }
-     .subsite--reading .subsite__hero::after,
-     .subsite-list__item--reading::after {
-         background-image: url('./images/reading.jpg');
-     }
-     .subsite--slides .subsite__hero::after,
-     .subsite-list__item--slides::after {
-         background-image: url('./images/beer.jpg');
-     }
+    @keyframes bgGradient {
+        0% {
+            background-position: 0% 50%
+        }
 
-     .subsite-list__item a {
-         width: 100%;
-         height: 100%;
-         text-decoration: none;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-     }
+        50% {
+            background-position: 100% 50%
+        }
 
-     .subsite__name,
-     .subsite-list__item h3 {
-         text-transform: uppercase;
-         color: #FFFFFF;
-         font-weight: 200;
-         font-size: 50px;
-         margin: 0;
-         background: rgba(0, 0, 0, .25);
-         padding: 0 10px;
-     }
+        100% {
+            background-position: 0% 50%
+        }
+    }
 
-     .subsite__link li {
-         margin: 15px 5px;
-     }
+    .subsite--blog .subsite__hero::after,
+    .subsite-list__item--blog::after {
+        background-image: url('./images/house.jpg');
+    }
 
-     .subsite__link__item {
-         font-size: 20px;
-         padding: 5px 15px;
-         display: inline-block;
-         text-decoration: none;
-         border: 1px solid #c3b28b;
-         border-radius: 2px;
-         background-color: #e2d2b0;
-         color: #2d2b2b;
-         box-shadow: 0 3px 10px #d6d6d6;
-         transition: all 300ms;
-     }
+    .subsite--photos .subsite__hero::after,
+    .subsite-list__item--photos::after {
+        background-image: url('./images/cat.jpg');
+    }
 
-     .subsite__link__item:hover {
-         background-color: #f1efe6;
-         box-shadow: 0 2px 5px #d6d6d6;
-     }
-     /* desktop media querys */
-     @media screen and (min-width: 720px) {
-         .site-home {
-             background-color: #fff;
-             background: linear-gradient(-45deg, hsla(0, 80%, 81%, 1), hsla(180, 80%, 81%, 1), hsla(360, 80%, 81%, 1));
-	           background-size: 400% 400%;
-             animation: bgGradient 15s ease infinite;
-         }
+    .subsite--reading .subsite__hero::after,
+    .subsite-list__item--reading::after {
+        background-image: url('./images/reading.jpg');
+    }
 
-         .subsite-list {
-             max-width: 960px;
-             flex-wrap: wrap;
-             flex-direction: row;
-             margin:  0 auto;
-             transform: none;
-             align-items: center;
-             justify-content: space-around;
-         }
-         .subsite-list__item {
-             width: 40%;
-             border-radius: 50px;
-             overflow: hidden;
-             transition: transform 300ms, filter 300ms;
-             filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, .5));
-         }
-         .subsite-list__item:hover {
-             transform: translateY(-10%);
-             filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, .5));
+    .subsite--slides .subsite__hero::after,
+    .subsite-list__item--slides::after {
+        background-image: url('./images/beer.jpg');
+    }
 
-         }
-         .subsite-list__item::after {
-             background-size: cover;
-         }
-         .subsite__hero {
-             min-height: 20vw;
-         }
-         .subsite__body {
-             margin-top: 30px;
-         }
-     }
+    .subsite-list__item a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-     .update-available {
-         position: fixed;
-         bottom: 20px;
-         right: 30px;
-         border-radius: 4px;
-         box-shadow: 0px 6px 8px rgba(0, 0, 0, .1);
-         background: #efffff;
-         font-size: 14px;
-         padding: 10px 20px;
-         cursor: pointer;
-     }
+    .subsite__name,
+    .subsite-list__item h3 {
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-weight: 200;
+        font-size: 50px;
+        margin: 0;
+        background: rgba(0, 0, 0, .25);
+        padding: 0 10px;
+    }
 
-     /* desktop media querys */
-     @media screen and (max-width: 500px) {
-         .update-available {
-             bottom: 0;
-             left: 50%;
-             transform: translateX(-50%);
-             width: 80%;
-             text-align: center;
-             border-radius: 4px 4px 0 0;
-         }
-     }
+    .subsite__link li {
+        margin: 15px 5px;
+    }
 
-     .skeleton {
-         border: 1px solid #dfdfdf;
-         list-style-type: none;
-         width: 200px;
-         height: 25px;
-         background-image: linear-gradient(90deg, #F4F4F4 0px, rgba(229,229,229,0.8) 40px, #F4F4F4 80px);
-         background-size: 600px;
-         animation: shine-lines 2.0s infinite ease-out;
-         border-radius: 2px;
-     }
+    .subsite__link__item {
+        font-size: 20px;
+        padding: 5px 15px;
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid #c3b28b;
+        border-radius: 2px;
+        background-color: #e2d2b0;
+        color: #2d2b2b;
+        box-shadow: 0 3px 10px #d6d6d6;
+        transition: all 300ms;
+    }
 
-     @keyframes shine-lines {
-         0% {
-             background-position: -100px;
-         }
-         40%, 100% {
-             background-position: 200px;
-         }
-     }
-    </style>
-    <body>
-        <section class="wrapper site-home">
-            <section class="site-screen site-screen--first">
-                <img width="115" height="115" alt="Yaodong Li's avatar" src="./images/avatar.png"/>
-                <h1 class="site-name">Yaodong Li</h1>
-                <h2 class="site-name__nickname">Vanilla</h2>
-                <ul class="hobby-list">
-                    <li>Geek</li>
-                </ul>
-                <p class="site-introduce">
-                    <em class="site-introduce__highlight">Hi,</em><br />
-                    Welcome <br />
-                    To My World.
-                </p>
-            </section>
-            <section class="site-screen site-screen--second">
-                <ul class="subsite-list">
-                    <li class="subsite-list__item subsite-list__item--blog">
-                        <link rel="prerender" href="https://blog.liyaodong.com">
-                        <a href="https://blog.liyaodong.com">
-                            <h3>BLOG</h3>
-                        </a>
-                    </li>
-                    <li class="subsite-list__item subsite-list__item--photos">
-                        <a href="https://photos.app.goo.gl/FUiJvWpPv5XrSh3T9" target="_blank">
-                            <h3>PHOTOS</h3>
-                        </a>
-                    </li>
-                    <li class="subsite-list__item subsite-list__item--reading">
-                        <a href="#reading">
-                            <h3>READING</h3>
-                        </a>
-                    </li>
-                    <li class="subsite-list__item subsite-list__item--slides">
-                        <a href="#slides">
-                            <h3>SLIDES</h3>
-                        </a>
-                    </li>
-                </ul>
-            </section>
+    .subsite__link__item:hover {
+        background-color: #f1efe6;
+        box-shadow: 0 2px 5px #d6d6d6;
+    }
+
+    /* desktop media querys */
+    @media screen and (min-width: 720px) {
+        .site-home {
+            background-color: #fff;
+            background: linear-gradient(-45deg, hsla(0, 80%, 81%, 1), hsla(180, 80%, 81%, 1), hsla(360, 80%, 81%, 1));
+            background-size: 400% 400%;
+            animation: bgGradient 15s ease infinite;
+        }
+
+        .subsite-list {
+            max-width: 960px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin: 0 auto;
+            transform: none;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .subsite-list__item {
+            width: 40%;
+            border-radius: 50px;
+            overflow: hidden;
+            transition: transform 300ms, filter 300ms;
+            filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, .5));
+        }
+
+        .subsite-list__item:hover {
+            transform: translateY(-10%);
+            filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, .5));
+
+        }
+
+        .subsite-list__item::after {
+            background-size: cover;
+        }
+
+        .subsite__hero {
+            min-height: 20vw;
+        }
+
+        .subsite__body {
+            margin-top: 30px;
+        }
+    }
+
+    .update-available {
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        border-radius: 4px;
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, .1);
+        background: #efffff;
+        font-size: 14px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    /* desktop media querys */
+    @media screen and (max-width: 500px) {
+        .update-available {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            text-align: center;
+            border-radius: 4px 4px 0 0;
+        }
+    }
+
+    .skeleton {
+        border: 1px solid #dfdfdf;
+        list-style-type: none;
+        width: 200px;
+        height: 25px;
+        background-image: linear-gradient(90deg, #F4F4F4 0px, rgba(229, 229, 229, 0.8) 40px, #F4F4F4 80px);
+        background-size: 600px;
+        animation: shine-lines 2.0s infinite ease-out;
+        border-radius: 2px;
+    }
+
+    @keyframes shine-lines {
+        0% {
+            background-position: -100px;
+        }
+
+        40%,
+        100% {
+            background-position: 200px;
+        }
+    }
+</style>
+
+<body>
+    <section class="wrapper site-home">
+        <section class="site-screen site-screen--first">
+            <img width="115" height="115" alt="Yaodong Li's avatar" src="./images/avatar.png" />
+            <h1 class="site-name">Yaodong Li</h1>
+            <h2 class="site-name__nickname">Vanilla</h2>
+            <ul class="hobby-list">
+                <li>Geek</li>
+            </ul>
+            <p class="site-introduce">
+                <em class="site-introduce__highlight">Hi,</em><br />
+                Welcome <br />
+                To My World.
+            </p>
         </section>
+        <section class="site-screen site-screen--second">
+            <ul class="subsite-list">
+                <li class="subsite-list__item subsite-list__item--blog">
+                    <link rel="prerender" href="https://blog.liyaodong.com">
+                    <a href="https://blog.liyaodong.com">
+                        <h3>BLOG</h3>
+                    </a>
+                </li>
+                <li class="subsite-list__item subsite-list__item--photos">
+                    <a href="https://photos.app.goo.gl/FUiJvWpPv5XrSh3T9" target="_blank">
+                        <h3>PHOTOS</h3>
+                    </a>
+                </li>
+                <li class="subsite-list__item subsite-list__item--reading">
+                    <a href="#reading">
+                        <h3>READING</h3>
+                    </a>
+                </li>
+                <li class="subsite-list__item subsite-list__item--slides">
+                    <a href="#slides">
+                        <h3>SLIDES</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </section>
 
-        <section class="subsite subsite--blog">
-            <!-- <section class="subsite__hero">
+    <section class="subsite subsite--blog">
+        <!-- <section class="subsite__hero">
                 <h2 class="subsite__name">BLOG</h2>
             </section> -->
-            <section class="subsite__body">
-                <!-- <div class="subsite--blog__placeholder">
+        <section class="subsite__body">
+            <!-- <div class="subsite--blog__placeholder">
                     <div class="subsite--blog__placeholder-title"></div>
                     <div class="subsite--blog__placeholder-desc-small"></div>
                     <div class="subsite--blog__placeholder-desc-large"></div>
@@ -479,67 +494,81 @@
                     <div class="subsite--blog__placeholder-desc-small"></div>
                     <div class="subsite--blog__placeholder-desc-large"></div>
                 </div> -->
-                <!-- <iframe class="blog-iframe" src="https://blog.liyaodong.com/shadow-doc.html" frameborder="0"></iframe> -->
-            </section>
-            <a href="#home" class="subsite__back"></a>
+            <!-- <iframe class="blog-iframe" src="https://blog.liyaodong.com/shadow-doc.html" frameborder="0"></iframe> -->
         </section>
+        <a href="#home" class="subsite__back"></a>
+    </section>
 
-        <section class="subsite subsite--reading">
-            <section class="subsite__hero">
-                <h2 class="subsite__name">reading</h2>
-            </section>
-            <ul class="subsite__body subsite__link" id="reading">
-                <li class="skeleton"></li>
-                <li class="skeleton"></li>
-                <li class="skeleton"></li>
-                <li class="skeleton"></li>
-                <li class="skeleton"></li>
+    <section class="subsite subsite--reading">
+        <section class="subsite__hero">
+            <h2 class="subsite__name">reading</h2>
+        </section>
+        <ul class="subsite__body subsite__link" id="reading">
+            <li class="skeleton"></li>
+            <li class="skeleton"></li>
+            <li class="skeleton"></li>
+            <li class="skeleton"></li>
+            <li class="skeleton"></li>
+        </ul>
+        <template id="reading-template">
+            <li>
+                <a class="subsite__link__item" href="%%link%%">%%title%%</a>
+            </li>
+        </template>
+        <a href="#home" class="subsite__back"></a>
+    </section>
+    <section class="subsite subsite--slides">
+        <section class="subsite__hero">
+            <h2 class="subsite__name">slides</h2>
+        </section>
+        <section class="subsite__body">
+            <ul class="subsite__link">
+                <li><a class="subsite__link__item" href="https://liyaodong.com/micro-frontends/session/index.html"
+                        target="_blank">Introduce to Micro Front-ends</a></li>
+                <li><a class="subsite__link__item" href="https://liyaodong.com/react-redux-session/"
+                        target="_blank">React Redux practices</a></li>
+                <li><a class="subsite__link__item" href="https://bit.ly/2019PWAMP" target="_blank">PWA + AMP 构建超快 Web
+                        App</a></li>
+                <li><a class="subsite__link__item"
+                        href="https://docs.google.com/presentation/d/1TZKG8NYTZUVzxso66STZDhk2HbpUDUiKPd7K563HsFM"
+                        target="_blank">How browser rending engine works</a></li>
+                <li><a class="subsite__link__item" href="https://liyaodong.com/introduce_to_react_hooks/README.html"
+                        target="_blank">Introduce to React Hooks</a></li>
+                <li><a class="subsite__link__item" href="https://liyaodong.com/amp_stories/amp.html"
+                        target="_blank">Build blazing fast website with AMP</a></li>
+                <li><a class="subsite__link__item" href="https://liyaodong.com/io2019-recap/web-components.html"
+                        target="_blank">Web Components introduce</a></li>
+                <li><a class="subsite__link__item"
+                        href="https://liyaodong.com/google_io_2018_redux/google_io_2018_redux.html"
+                        target="_blank">Google I/O 2018 Redux</a></li>
+                <li><a class="subsite__link__item" href="https://liyaodong.com/css-engineering/#/"
+                        target="_blank">CSS工程化与调试之路</a></li>
+                <li><a class="subsite__link__item" href="https://liyaodong.com/introduce_electron/"
+                        target="_blank">Desktop app development with Front-end tech</a></li>
+                <li><a class="subsite__link__item"
+                        href="https://www.icloud.com/keynote/07O5BBcdW7VdUY4DroE56xgSA#LambdaCalculus"
+                        target="_blank">Lambda 演算 —— 从入门到放弃</a></li>
             </ul>
-            <template id="reading-template">
-                <li>
-                    <a class="subsite__link__item" href="%%link%%">%%title%%</a>
-                </li>
-            </template>
-            <a href="#home" class="subsite__back"></a>
         </section>
-        <section class="subsite subsite--slides">
-            <section class="subsite__hero">
-                <h2 class="subsite__name">slides</h2>
-            </section>
-            <section class="subsite__body">
-                <ul class="subsite__link">
-                    <li><a class="subsite__link__item" href="https://liyaodong.com/micro-frontends/session/index.html" target="_blank">Introduce to Micro Frontends</a></li>
-                    <li><a class="subsite__link__item" href="https://liyaodong.com/react-redux-session/" target="_blank">React Redux practices</a></li>
-                    <li><a class="subsite__link__item" href="https://bit.ly/2019PWAMP" target="_blank">PWA + AMP 构建超快 Web App</a></li>
-                    <li><a class="subsite__link__item" href="https://docs.google.com/presentation/d/1TZKG8NYTZUVzxso66STZDhk2HbpUDUiKPd7K563HsFM" target="_blank">How browser rending engine works</a></li>
-                    <li><a class="subsite__link__item" href="https://liyaodong.com/introduce_to_react_hooks/README.html" target="_blank">Introduce to React Hooks</a></li>
-                    <li><a class="subsite__link__item" href="https://liyaodong.com/amp_stories/amp.html" target="_blank">Build blazing fast website with AMP</a></li>
-                    <li><a class="subsite__link__item" href="https://liyaodong.com/io2019-recap/web-components.html" target="_blank">Web Components introduce</a></li>
-                    <li><a class="subsite__link__item" href="https://liyaodong.com/google_io_2018_redux/google_io_2018_redux.html" target="_blank">Google I/O 2018 Redux</a></li>
-                    <li><a class="subsite__link__item" href="https://liyaodong.com/css-engineering/#/" target="_blank">CSS工程化与调试之路</a></li>
-                    <li><a class="subsite__link__item" href="https://liyaodong.com/introduce_electron/" target="_blank">Desktop app development with frontend tech</a></li>
-                    <li><a class="subsite__link__item" href="https://www.icloud.com/keynote/07O5BBcdW7VdUY4DroE56xgSA#LambdaCalculus" target="_blank">Lambda 演算 —— 从入门到放弃</a></li>
-                </ul>
-            </section>
-            <a href="#home" class="subsite__back"></a>
-        </section>
+        <a href="#home" class="subsite__back"></a>
+    </section>
 
-        <div class="update-available hide js-update-serviceworker">
-            Update available, click here to update the APP
-        </div>
-        <script src="./src/js/app.js"></script>
+    <div class="update-available hide js-update-serviceworker">
+        Update available, click here to update the APP
+    </div>
+    <script src="./src/js/app.js"></script>
 
-        <script>
-         (() => {
-             const serviceWorkerAvailable = 'serviceWorker' in navigator;
-             if (!serviceWorkerAvailable) {
-                 return;
-             }
+    <script>
+        (() => {
+            const serviceWorkerAvailable = 'serviceWorker' in navigator;
+            if (!serviceWorkerAvailable) {
+                return;
+            }
 
-             function listenAndUpdateServiceWorker(reg) {
+            function listenAndUpdateServiceWorker(reg) {
                 function listenForWaitingServiceWorker(reg, callback) {
                     function awaitStateChange() {
-                        reg.installing.addEventListener('statechange', function() {
+                        reg.installing.addEventListener('statechange', function () {
                             if (this.state === 'installed') callback(reg);
                         });
                     }
@@ -552,11 +581,11 @@
                 // reload once when the new Service Worker starts activating
                 var refreshing;
                 navigator.serviceWorker.addEventListener('controllerchange',
-                                                        function() {
-                                                            if (refreshing) return;
-                                                            refreshing = true;
-                                                            window.location.reload();
-                                                        }
+                    function () {
+                        if (refreshing) return;
+                        refreshing = true;
+                        window.location.reload();
+                    }
                 );
                 function promptUserToRefresh(reg) {
                     document.querySelector('.js-update-serviceworker').classList.remove('hide');
@@ -567,31 +596,32 @@
                     reg.waiting && reg.waiting.postMessage('skipWaiting');
                 };
                 document.querySelector('.js-update-serviceworker').addEventListener('click', updateServiceWorker);
-             }
+            }
 
-             window.addEventListener('load', () => {
+            window.addEventListener('load', () => {
                 navigator.serviceWorker.register('./sw.js')
-                        .then(registration => {
-                            listenAndUpdateServiceWorker(registration);
-                            console.log(`Service Worker registered! Scope: ${registration.scope}`);
-                        })
-                        .catch(err => {
-                            console.log(`Service Worker registration failed: ${err}`);
-                        });
+                    .then(registration => {
+                        listenAndUpdateServiceWorker(registration);
+                        console.log(`Service Worker registered! Scope: ${registration.scope}`);
+                    })
+                    .catch(err => {
+                        console.log(`Service Worker registration failed: ${err}`);
+                    });
 
-             });
-         })();
-        </script>
+            });
+        })();
+    </script>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30027709-2"></script>
-        <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30027709-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
 
-         gtag('config', 'UA-30027709-2');
-        </script>
-    </body>
+        gtag('config', 'UA-30027709-2');
+    </script>
+</body>
+
 </html>
