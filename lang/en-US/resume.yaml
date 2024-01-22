@@ -52,7 +52,7 @@ project:
 
     - name: pandaily
       role: CTO
-      title: Tech Media Platform Spotlighting China's technology Innovation
+      title: Pandaily - Tech Media Platform Spotlighting China's technology Innovation
       contents:
         - Led a multifaceted team through comprehensive build and deployment operations, optimizing processes for peak efficiency
         - Work closely with PO/PM and stakeholders to ensure smooth project delivery
@@ -69,7 +69,7 @@ project:
 
     - name: airhost
       role: Front-end Tech Lead
-      title: Cloud-based Hospitality Business Management System
+      title: Airhost - Cloud-based Hospitality Business Management System
       contents:
         - Spearheaded the front-end development team, driving project milestones, architected scalable and maintainable front-end frameworks
         - Utilized React and Ruby on Rails to migrate the legacy system to a React SPA page
@@ -82,7 +82,7 @@ project:
 
     - name: booking
       role: Front-end Tech Lead
-      title: A prominent international airline platform (Name withheld due to confidentiality agreement)
+      title: ThoughtWorks - A prominent international airline platform (Name withheld due to confidentiality agreement)
       contents:
         - Led the migration of a large legacy e-commerce booking system to a modern React, Redux, and SPA frontend architecture
         - Designed and enforced security best practices, technology training programs, and performance optimization 
@@ -96,7 +96,7 @@ project:
       tech_stack: React, Redux, Jest, C#, Webpack, Docker, Typescript, SpeedCurve, Sentry
     - name: geekpark
       role: Front-End Developer
-      title: Online News/Conference booking Website 
+      title: GeekPark - Online News/Conference booking Website 
       contents:
         - Developed the UI of the news system, encompassing the news/user management system, user account system, order system, and the check-in system.
         - Leveraged the latest cutting-edge technologies such as React, Redux, and ElectronJS to build the system
