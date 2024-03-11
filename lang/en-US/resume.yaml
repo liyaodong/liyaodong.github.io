@@ -5,9 +5,6 @@ name: Yaodong Li
 job_title: Full Stack Engineer/Font-end Lead
 about:
   title: About Me
-  contents: 
-    - A passionate front-end engineer who loves turning ideas into reality.
-    - I'm a product-centric engineer, proficient in swiftly mastering new tools to tackle challenges and craft exceptional digital solutions.
 education:
   title: Education
   school: Baoji University of Arts and Sciences
@@ -48,7 +45,7 @@ project:
         - Introduced agile development and facilitated scrum events
       link: deepbits.com
       date: May 2022 - Present, Remote, USA
-      tech_stack: React, NextJS, TailwindCSS, NodeJS, Koa, DocumentDB, Redis, Neo4j, AWS
+      tech_stack: React, NextJS, TailwindCSS, NodeJS, Koa, MongoDB, Redis, Neo4j, AWS
 
     - name: pandaily
       role: CTO
