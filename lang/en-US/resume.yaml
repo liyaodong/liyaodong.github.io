@@ -36,7 +36,7 @@ project:
   history:
     - name: deepbits
       role: Full Stack Engineer
-      title: Deepbits - Software Supply Chain Security and Compliance
+      title: Deepbits - Software Supply Chain Security and Compliance(SaaS)
       contents:
         - As the system architecture designer, I'm responsible for the system architecture design and the development of the core system.
         - Developed the core system using React, MaterialUI, NextJS and NodeJS
@@ -65,11 +65,11 @@ project:
         - Leveraged AI (TTS, GPT, Translation) to propel platform user experience
       link: pandaily.com
       date: Jan 2021 - Apr 2022, Remote, Beijing
-      tech_stack: React, Wordpress, Python, NodeJS, Postgres, AWS, Stripe
+      tech_stack: React, VueJS, Wordpress, Python, NodeJS, Postgres, AWS, Stripe, Serverless
 
     - name: airhost
       role: Front-end Tech Lead
-      title: Airhost - Cloud-based Hospitality Business Management System
+      title: Airhost - Cloud-based Hospitality Business Management System(SaaS)
       contents:
         - Spearheaded the front-end development team, driving project milestones, architected scalable and maintainable front-end frameworks
         - Utilized React and Ruby on Rails to migrate the legacy system to a React SPA page
