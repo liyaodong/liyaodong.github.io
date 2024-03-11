@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaodong Li - Resume</title>
+    <meta name="description" content="I am Yaodong Li, a web developer who loves convert ideas into reality.">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="./iconfont/iconfont.css" rel="stylesheet" />
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font: 400 16px/1.25 'Baloo Chettan 2', Helvetica\ Neue, Helvetica, Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style-type: none;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+
+        .resume {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f3f3f3;
+        }
+
+        .resume-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            color: #fff;
+            background-color: #444;
+            padding: 20px 30px;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .resume-header__name {
+            display: flex;
+            align-items: center;
+        }
+
+        .resume-header__avatar {
+            margin-right: 10px;
+        }
+
+        .resume-header__heading h1 {
+            margin: 0 0 5px 0;
+            font-size: 24px;
+        }
+
+        .resume-header__heading h2 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .resume-social {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-size: 14px;
+            padding: 5px 10px;
+            flex-wrap: wrap;
+        }
+
+        .resume-social li {
+            margin: 0 5px;
+        }
+
+        .resume-social a {
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        .resume-social i {
+            margin-right: 3px;
+        }
+
+        .resume-body {
+            padding: 20px;
+            display: flex;
+        }
+
+        .resume-body__side {
+            padding: 0 10px;
+        }
+
+        .resume-body__side:not(.resume-body__side--main) {
+            max-width: 260px;
+        }
+
+        .resume-body__side--main {
+            flex-grow: 1;
+        }
+
+        .resume-body__section {
+            margin-bottom: 10px;
+        }
+
+        .resume-body__section__heading {
+            margin: 10px 0 8px;
+            display: inline-block;
+            border-left: 3px solid #444;
+            padding-left: 10px;
+            font-size: 18px;
+        }
+
+        .resume-body__section__body {
+            font-size: 14px;
+        }
+
+        .resume-body__section h4 {
+            margin: 5px 0;
+        }
+
+        .resume-skills__list li {
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            max-width: 280px;
+        }
+
+        .resume-project-experience__item {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .resume-project-experience__item ul {
+            margin-top: 5px;
+        }
+
+        .resume-project-experience__item li {
+            margin-bottom: 5px;
+        }
+
+        .resume-project-experience__item__heading {
+            background-color: #e3e3e3;
+            padding: 3px 5px 4px 5px;
+        }
+
+        .resume-project-experience__item__heading a {
+            color: #444;
+        }
+
+        .resume-project-experience__item__stack {
+            font-weight: 600;
+            margin: 5px 0;
+        }
+
+        .resume-project-experience__item__title {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .resume-project-experience__item__heading__part {
+            margin-top: 3px;
+            font-size: 13px;
+            color: #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .session-list {
+            padding-left: 20px;
+        }
+
+        .session-list li {
+            margin-bottom: 4px;
+            list-style-type: disc;
+        }
+
+        @media screen and (max-width: 899px) {
+            .resume-header {
+                text-align: center;
+                flex-direction: column;
+            }
+
+            .resume-social {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .resume-body {
+                flex-wrap: wrap;
+                padding: 10px 15px;
+            }
+
+            .resume-body__side {
+                width: 100%;
+            }
+        }
+
+        @media print {
+            .resume {
+                background-color: transparent;
+            }
+
+            .resume-header {
+                background-color: transparent;
+                color: #000;
+                border-bottom: 1px solid #aaa;
+                border-radius: 0;
+                padding: 10px 30px;
+            }
+
+            .resume-body {
+                padding: 10px 20px;
+            }
+
+            .resume-social a {
+                color: #000;
+            }
+
+            .resume-project-experience__item__heading {
+                text-decoration: underline;
+            }
+
+
+            .resume-body__side:not(.resume-body__side--main) .resume-body__section,
+            .resume-project-experience__item,
+            .avoid-page-break {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume">
+        <div class="resume-header">
+            <div class="resume-header__name">
+                <div class="resume-header__avatar">
+                    <img width="100" height="100" alt="Yaodong Li avatar" src="./images/avatar.png" />
+                </div>
+                <div class="resume-header__heading">
+                    <h1>Yaodong Li</h1>
+                    <h2>Full Stack Engineer&#x2F;Font-end Lead</h2>
+                </div>
+            </div>
+            <ul class="resume-social">
+                <li>
+                    <a href="https://liyaodong.com" target="_blank" rel="noopener">
+                        <i class="iconfont iconwww"></i>
+                        <span>
+                            liyaodong.com
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/liyaodong" target="_blank" rel="noopener">
+                        <i class="iconfont icongithub"></i>
+                        <span>
+                            github.com/liyaodong
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:mail@liyaodong.com" target="_blank" rel="noopener">
+                        <i class="iconfont iconemail"></i>
+                        <span>
+                            mail@liyaodong.com
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/yaodong-li-8223a385/" target="_blank" rel="noopener">
+                        <i class="iconfont iconLinkedinlogo"></i>
+                        <span>
+                            yaodong-li-8223a385
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/xiaofengdong" target="_blank" rel="noopener">
+                        <i class="iconfont icontwitter"></i>
+                        <span>
+                            xiaofengdong
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="resume-body">
+            <div class="resume-body__side">
+                <div class="resume-body__section">
+                    <h3 class="resume-body__section__heading">
+                        About Me
+                    </h3>
+                    <div class="resume-body__section__body">
+                        <p style="margin-top: 6px; margin-bottom: 6px;">A passionate <span
+                                id="experience-years"></span>+ years experienced front-end
+                            engineer who
+                            loves turning ideas into reality.</p>
+
+                        <script>
+                            // Calculate years by current date minus 2014-10
+                            var currentDate = new Date();
+                            var targetDate = new Date('2014-10');
+                            var diffInMilliseconds = currentDate - targetDate;
+                            var diffInYears = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 365.25));
+
+                            document.querySelector('#experience-years').innerText = diffInYears;
+                        </script>
+                        <p style="margin-top: 6px; margin-bottom: 6px;">A product-centric engineer, proficient
+                            in swiftly mastering new tools to tackle challenges and craft exceptional digital solutions.
+                        </p>
+                    </div>
+                </div>
+                <div class="resume-body__section">
+                    <h3 class="resume-body__section__heading">
+                        Skills
+                    </h3>
+                    <div class="resume-body__section__body">
+                        <ul class="resume-skills__list">
+                            <li>
+                                <span class="resumeconsole.log('', )-skills__name">JS/TS/HTML/CSS/PWA</span>
+                                <span class="resume-skills__score">5</span>
+                            </li>
+                            <li>
+                                <span class="resume-skills__name">React/Redux/VueJS</span>
+                                <span class="resume-skills__score">5</span>
+                            </li>
+                            <li>
+                                <span class="resume-skills__name">Webpack/Jest/Puppeteer</span>
+                                <span class="resume-skills__score">5</span>
+                            </li>
+                            <li>
+                                <span class="resume-skills__name">NodeJS/PHP/Python/Ruby On Rails</span>
+                                <span class="resume-skills__score">4</span>
+                            </li>
+                            <li>
+                                <span class="resume-skills__name">AWS/Docker/DevOps/CI/Serverless</span>
+                                <span class="resume-skills__score">4</span>
+                            </li>
+                            <li>
+                                <span class="resume-skills__name">Linux/Vim/Git/GPT</span>
+                                <span class="resume-skills__score">4</span>
+                            </li>
+                            <li>
+                                <span class="resume-skills__name">UX/UI Design/Figma/PhotoShop</span>
+                                <span class="resume-skills__score">4</span>
+                            </li>
+                            <li>
+                                <span class="resume-skills__name">Communication/Problem Solving</span>
+                                <span class="resume-skills__score">4</span>
+                            </li>
+                            <li>
+                                <span class="resume-skills__name">Leadership/Mentoring/Consulting</span>
+                                <span class="resume-skills__score">3</span>
+                            </li>
+                            <li>
+                                <span class="resume-skills__name">Agile Development/Scrum</span>
+                                <span class="resume-skills__score">4</span>
+                            </li>
+                            <li>
+                                <span class="resume-skills__name">
+                                    <a href="https://www.credly.com/badges/611613dc-d730-418e-a3b4-60521902b9cf/linked_in_profile"
+                                        target="_blank" rel="noopener">
+                                        Professional Scrum Master™ I
+                                    </a>
+                                </span>
+                                <span class="resume-skills__score">PSM I</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="resume-body__section">
+                    <h3 class="resume-body__section__heading">
+                        Education
+                    </h3>
+                    <div class="resume-body__section__body">
+                        <h4>Baoji University of Arts and Sciences</h4>
+                        <span>Geography Science, 2011-2015</span>
+                    </div>
+                </div>
+                <div class="resume-body__section">
+                    <h3 class="resume-body__section__heading">
+                        Language
+                    </h3>
+                    <div class="resume-body__section__body">
+                        Mandarin Chinese &#x2F; English (PTE 7)
+                    </div>
+                </div>
+                <div class="resume-body__section">
+                    <h3 class="resume-body__section__heading">
+                        Community Session Sharing
+                    </h3>
+                    <ul class="resume-body__section__body session-list">
+                        <li>CSS Engineering - Xi’an UI Super Day, 2017</li>
+                        <li>Google I/O 2018 Redux - GDG Xi'an, 2018</li>
+                        <li>Building Blazing Fast Websites with AMP - FreeCodeCamp Events, 2018</li>
+                        <li>Building Fast Web Apps with PWA and AMP - FDConf ShangHai, 2019</li>
+                        <li>Master Chrome Devtool - GDG Xi'an, 2022</li>
+                        <li>Passwordless Authentication with PassKey - GDG Xi'an, 2023</li>
+                    </ul>
+                </div>
+                <div class="resume-body__section">
+                    <h3 class="resume-body__section__heading">
+                        Hobby Projects
+                    </h3>
+                    <ul class="resume-body__section__body session-list">
+                        <li>An online NIW&#x2F;EB1 visa application drafting system at quickfiling.us, using Next.js,
+                            AWS Lambda, and ChatGPT</li>
+                        <li>An online AI drawing website, maliang.app, using Next.js, Cloudflare, Discord API, and
+                            Midjourney AI</li>
+                        <li>An online comics reading website, toontoonimanga.com, using Next.js, Tailwind CSS, DaisyUI,
+                            and Strapi as the CMS</li>
+                        <li>A series of automation systems for my daily work, using n8n, ChatGPT, AWS Lambda, and
+                            Telegram&#x2F;Lark&#x2F;Slack APIs</li>
+                        <li>A home lab server that includes a network gateway, firewall, NAS, media server, and smart
+                            home system</li>
+                        <li>A series of Chrome extensions (AI Translation, Image Upload Helper, QR Code Generator, etc.)
+                        </li>
+                    </ul>
+                </div>
+                <div class="resume-body__section">
+                    <h3 class="resume-body__section__heading">
+                        Trainer Experience
+                    </h3>
+                    <ul class="resume-body__section__body session-list">
+                        <li>Interactive Front-end Mastery Workshop</li>
+                        <li>TDD, Refactoring, and Pair Programming</li>
+                        <li>Tech Lead Training</li>
+                        <li>Micro Front-end Training</li>
+                        <li>Agile Scrum Training</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-body__side resume-body__side--main">
+                <div class="resume-body__section">
+                    <h3 class="resume-body__section__heading">
+                        Work Experiences
+                    </h3>
+                    <div class="resume-body__section__body">
+                        <div class="resume-project-experience">
+                            <!-- Loop for project.history -->
+                            <!-- BEGIN: project.history -->
+                            <div class="resume-project-experience__item">
+                                <div class="resume-project-experience__item__heading">
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__title">Deepbits - Software Supply
+                                            Chain Security and Compliance(SaaS)</span>
+                                        <a href="https://deepbits.com" target="_blank" rel="noopener">deepbits.com</a>
+                                    </div>
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__date">May 2022 - Present, Remote,
+                                            USA</span>
+                                        Full Stack Engineer
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>- As the system architecture designer, I&#39;m responsible for the system
+                                        architecture design and the development of the core system.</li>
+                                    <li>- Developed the core system using React, MaterialUI, NextJS and NodeJS</li>
+                                    <li>- Developed backend system using NodeJS, Koa and DocumentDB</li>
+                                    <li>- Implemented the event queue system using BullMQ and Redis</li>
+                                    <li>- Integrated with Neo4j system to build a graph search user experience</li>
+                                    <li>- Developed on serverless architecture to implement high performance micro
+                                        services</li>
+                                    <li>- Built the authentication and metering system to implement usage-based billing
+                                        API</li>
+                                    <li>- Introduced agile development and facilitated scrum events</li>
+                                </ul>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
+                                    React, NextJS, TailwindCSS, NodeJS, Koa, DocumentDB, Redis, Neo4j, AWS
+                                </p>
+                            </div>
+                            <div class="resume-project-experience__item">
+                                <div class="resume-project-experience__item__heading">
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__title">Pandaily - Tech Media
+                                            Platform Spotlighting China&#39;s technology Innovation</span>
+                                        <a href="https://pandaily.com" target="_blank" rel="noopener">pandaily.com</a>
+                                    </div>
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__date">Jan 2021 - Apr 2022, Remote,
+                                            Beijing</span>
+                                        CTO
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>- Led a multifaceted team through comprehensive build and deployment operations,
+                                        optimizing processes for peak efficiency</li>
+                                    <li>- Work closely with PO&#x2F;PM and stakeholders to ensure smooth project
+                                        delivery</li>
+                                    <li>- Executed SEO optimization strategies for enhanced search engine ranking</li>
+                                    <li>- Analyzed user behavior and data analytics to drive informed design decisions
+                                    </li>
+                                    <li>- Utilized AMP technology to secured fast page loading times</li>
+                                    <li>- Optimized performance across front-end, back-end, and database</li>
+                                    <li>- Architected the scale out WordPress system for managing high traffic volumes
+                                    </li>
+                                    <li>- Seamlessly integrated with third-party services, including Stripe, Mailchimp,
+                                        and GA4</li>
+                                    <li>- Leveraged AI (TTS, GPT, Translation) to propel platform user experience</li>
+                                </ul>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
+                                    React, VueJS, Wordpress, Python, NodeJS, Postgres, AWS, Stripe, Serverless
+                                </p>
+                            </div>
+                            <div class="resume-project-experience__item">
+                                <div class="resume-project-experience__item__heading">
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__title">Airhost - Cloud-based
+                                            Hospitality Business Management System(SaaS)</span>
+                                        <a href="https://airhost.sg" target="_blank" rel="noopener">airhost.sg</a>
+                                    </div>
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__date">May 2020 - Jan 2021, Remote,
+                                            Singapore</span>
+                                        Front-end Tech Lead
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>- Spearheaded the front-end development team, driving project milestones,
+                                        architected scalable and maintainable front-end frameworks</li>
+                                    <li>- Utilized React and Ruby on Rails to migrate the legacy system to a React SPA
+                                        page</li>
+                                    <li>- Offered expert leadership and technical direction, encompassing meticulous
+                                        code reviews, pair programming, and the coding guidelines setup</li>
+                                    <li>- Developed the complex UI components (dynamic form builder and calendar)</li>
+                                    <li>- Actively engaged in troubleshooting and resolving complex technical issues,
+                                        ensuring stability and performance of the platform</li>
+                                </ul>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
+                                    React, Ruby on Rails, Jest, Webpack, Docker, AWS, Typescript
+                                </p>
+                            </div>
+                            <div class="resume-project-experience__item">
+                                <div class="resume-project-experience__item__heading">
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__title">ThoughtWorks</span>
+                                        <a href="https://thoughtworks.com" target="_blank"
+                                            rel="noopener">thoughtworks.com</a>
+                                    </div>
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__date">Oct 2016 - May 2020,
+                                            ThoughtWorks Xi&#39;an</span>
+                                        Front-end Tech Lead
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>- About the project - Prominent international airline platform (Name withheld
+                                        due to confidentiality agreement)</li>
+                                    <li>- Led the migration of a large legacy e-commerce booking system to a modern
+                                        React, Redux, and SPA front-end architecture</li>
+                                    <li>- Designed and enforced security best practices, technology training programs,
+                                        and performance optimization</li>
+                                    <li>- Implemented best practices for web accessibility, ensuring compliance with
+                                        WCAG guidelines</li>
+                                    <li>- Designed the React based i18n architecture to support legacy dotnet MVC system
+                                    </li>
+                                    <li>- Collaborated with UX for the consistent design system and shared component
+                                        library</li>
+                                    <li>- Implemented the A&#x2F;B testing strategy to enhance the conversion rate
+                                        systematically</li>
+                                    <li>- Mentored junior developers, enhancing front-end team skills through code
+                                        reviews, session, and workshops</li>
+                                    <li>- Conducted comprehensive interviews across junior and senior levels to assess
+                                        qualifications and fit for various technical roles</li>
+                                </ul>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
+                                    React, Redux, Jest, C#, Webpack, Docker, Typescript, SpeedCurve, Sentry
+                                </p>
+                            </div>
+                            <div class="resume-project-experience__item">
+                                <div class="resume-project-experience__item__heading">
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__title">GeekPark</span>
+                                        <a href="https://geekpark.net" target="_blank" rel="noopener">geekpark.net</a>
+                                    </div>
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__date">Oct 2014 - Sep 2016,
+                                            Beijing</span>
+                                        Front-end Developer
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>- Developed the UI of the news system, encompassing the news&#x2F;user
+                                        management system, user account system, order system, and the check-in system.
+                                    </li>
+                                    <li>- Leveraged the latest cutting-edge technologies such as React, Redux, and
+                                        ElectronJS to build the system</li>
+                                    <li>- Built and launched a series of fancy events pages that represent our brand
+                                        essence</li>
+                                </ul>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
+                                    jQuery, React, Redux, Ruby on Rails, ElectronJS, Chrome Extension, Git
+                                </p>
+                            </div>
+                            <!-- END: project.history -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30027709-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+
+            gtag('config', 'UA-30027709-2');
+        </script>
+</body>
+
+</html>
