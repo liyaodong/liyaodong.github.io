@@ -18,7 +18,7 @@ skills:
   consulting: Consulting
 language:
   title: Language
-  detail: Mandarin Chinese / English (PTE 7)
+  detail: Mandarin Chinese / English (PTE 70)
 session:
   title: Community Session Sharing
   css_engineering: CSS Engineering
@@ -42,6 +42,7 @@ project:
         - Integrated with Neo4j system to build a graph search user experience
         - Developed on serverless architecture to implement high performance micro services
         - Built the authentication and metering system to implement usage-based billing API
+        - Design and implement the open API system to support third-party integration
         - Introduced agile development and facilitated scrum events
       link: deepbits.com
       date: May 2022 - Present, Remote, USA
@@ -73,7 +74,7 @@ project:
         - Offered expert leadership and technical direction, encompassing meticulous code reviews, pair programming, and the coding guidelines setup
         - Developed the complex UI components (dynamic form builder and calendar)
         - Actively engaged in troubleshooting and resolving complex technical issues, ensuring stability and performance of the platform
-      tech_stack: React, Ruby on Rails, Jest, Webpack, Docker, AWS, Typescript
+      tech_stack: React, Ruby on Rails, Jest, Webpack, Docker, AWS, Datadog
       link: airhost.sg
       date: May 2020 - Jan 2021, Remote, Singapore
 
@@ -84,7 +85,7 @@ project:
       contents:
         - "About the project - Prominent international airline platform (Name withheld due to confidentiality agreement)"
         - Led the migration of a large legacy e-commerce booking system to a modern React, Redux, and SPA front-end architecture
-        - Designed and enforced security best practices, technology training programs, and performance optimization 
+        - Designed and enforced security best practices, technology training programs, and performance optimization for the front-end pipeline
         - Implemented best practices for web accessibility, ensuring compliance with WCAG guidelines 
         - Designed the React based i18n architecture to support legacy dotnet MVC system
         - Collaborated with UX for the consistent design system and shared component library
@@ -92,7 +93,7 @@ project:
         - Mentored junior developers, enhancing front-end team skills through code reviews, session, and workshops 
         - Conducted comprehensive interviews across junior and senior levels to assess qualifications and fit for various technical roles
       date: Oct 2016 - May 2020, ThoughtWorks Xi'an
-      tech_stack: React, Redux, Jest, C#, Webpack, Docker, Typescript, SpeedCurve, Sentry
+      tech_stack: React, Redux, Jest, C#, Docker, TS, Lighthouse, SpeedCurve, Sentry
     - name: geekpark
       role: Front-end Developer
       title: GeekPark
