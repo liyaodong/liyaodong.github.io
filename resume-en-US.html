@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="${{ resume.lang }}$">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${{ resume.title }}$</title>
-    <meta name="description" content="${{ resume.description }}$">
+    <title>Yaodong Li - Resume</title>
+    <meta name="description" content="I am Yaodong Li, a web developer who loves convert ideas into reality.">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
     <link href="./iconfont/iconfont.css" rel="stylesheet" />
     <style>
@@ -251,8 +251,8 @@
                     <img width="100" height="100" alt="Yaodong Li avatar" src="./images/avatar.png" />
                 </div>
                 <div class="resume-header__heading">
-                    <h1>${{ resume.name }}$</h1>
-                    <h2>${{ resume.job_title }}$</h2>
+                    <h1>Yaodong Li</h1>
+                    <h2>Senior Font-end&#x2F;Full Stack Engineer</h2>
                 </div>
             </div>
             <ul class="resume-social">
@@ -310,7 +310,7 @@
             <div class="resume-body__side">
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.about.title }}$
+                        About Me
                     </h3>
                     <div class="resume-body__section__body">
                         <p style="margin-top: 6px; margin-bottom: 6px;">
@@ -334,7 +334,7 @@
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.skills.title }}$
+                        Skills
                     </h3>
                     <div class="resume-body__section__body">
                         <ul class="resume-skills__list">
@@ -368,13 +368,11 @@
                                 <span class="resume-skills__score">4</span>
                             </li>
                             <li>
-                                <span class="resume-skills__name">${{ resume.skills.communication }}$/${{
-                                    resume.skills.problem_solving }}$</span>
+                                <span class="resume-skills__name">Communication/Problem Solving</span>
                                 <span class="resume-skills__score">4</span>
                             </li>
                             <li>
-                                <span class="resume-skills__name">${{ resume.skills.leadership }}$/${{
-                                    resume.skills.mentoring }}$/${{ resume.skills.consulting }}$</span>
+                                <span class="resume-skills__name">Leadership/Mentoring/Consulting</span>
                                 <span class="resume-skills__score">3</span>
                             </li>
                             <li>
@@ -395,89 +393,194 @@
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.education.title }}$
+                        Education
                     </h3>
                     <div class="resume-body__section__body">
-                        <h4>${{ resume.education.school }}$</h4>
-                        <span>${{ resume.education.major }}$</span>
+                        <h4>Baoji University of Arts and Sciences</h4>
+                        <span>Geography Science,  2011-2015</span>
                     </div>
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.language.title }}$
+                        Language
                     </h3>
                     <div class="resume-body__section__body">
-                        ${{ resume.language.detail }}$
+                        Mandarin Chinese &#x2F; English (PTE 70)
                     </div>
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.session.title }}$
+                        Community Session Sharing
                     </h3>
                     <ul class="resume-body__section__body session-list">
-                        <li>${{ resume.session.css_engineering }}$ - Xi’an UI Super Day, 2017</li>
+                        <li>CSS Engineering - Xi’an UI Super Day, 2017</li>
                         <li>Google I/O 2018 Redux - GDG Xi'an, 2018</li>
-                        <li>${{ resume.session.amp }}$ - FreeCodeCamp Events, 2018</li>
-                        <li>${{ resume.session.fdconf }}$, 2019</li>
-                        <li>${{ resume.session.devtool }}$ - GDG Xi'an, 2022</li>
-                        <li>${{ resume.session.passwordless }}$ - GDG Xi'an, 2023</li>
+                        <li>Building Blazing Fast Websites with AMP - FreeCodeCamp Events, 2018</li>
+                        <li>Building Fast Web Apps with PWA and AMP - FDConf ShangHai, 2019</li>
+                        <li>Master Chrome Devtool - GDG Xi'an, 2022</li>
+                        <li>Passwordless Authentication with PassKey - GDG Xi'an, 2023</li>
                     </ul>
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.hobby.name }}$
+                        Hobby Projects
                     </h3>
                     <ul class="resume-body__section__body session-list">
-                        ${{#resume.hobby.contents}}$
-                        <li>${{.}}$</li>
-                        ${{/resume.hobby.contents}}$
+                        <li>An online NIW&#x2F;EB1 visa application drafting system at quickfiling.us, using Next.js, AWS Lambda, and ChatGPT</li>
+                        <li>An online AI drawing website, maliang.app, using Next.js, Cloudflare, Discord API, and Midjourney AI</li>
+                        <li>An online comics reading website, toontoonimanga.com, using Next.js, Tailwind CSS, DaisyUI, and Strapi as the CMS</li>
+                        <li>A series of automation systems for my daily work, using n8n, ChatGPT, AWS Lambda, and Telegram&#x2F;Lark&#x2F;Slack APIs</li>
+                        <li>A home lab server that includes a network gateway, firewall, NAS, media server, and smart home system</li>
+                        <li>A series of Chrome extensions (AI Translation, Image Upload Helper, QR Code Generator, etc.)</li>
                     </ul>
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.trainer.title }}$
+                        Trainer Experience
                     </h3>
                     <ul class="resume-body__section__body session-list">
-                        <li>${{ resume.trainer.fe }}$</li>
-                        <li>${{ resume.trainer.tdd }}$</li>
-                        <li>${{ resume.trainer.tech_lead }}$</li>
-                        <li>${{ resume.trainer.micro }}$</li>
-                        <li>${{ resume.trainer.agile }}$</li>
+                        <li>Interactive Front-end Mastery Workshop</li>
+                        <li>TDD, Refactoring, and Pair Programming</li>
+                        <li>Tech Lead Training</li>
+                        <li>Micro Front-end Training</li>
+                        <li>Agile Scrum Training</li>
                     </ul>
                 </div>
             </div>
             <div class="resume-body__side resume-body__side--main">
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.project.title }}$
+                        Work Experiences
                     </h3>
                     <div class="resume-body__section__body">
                         <div class="resume-project-experience">
                             <!-- Loop for project.history -->
                             <!-- BEGIN: project.history -->
-                            ${{#resume.project.history}}$
                             <div class="resume-project-experience__item">
                                 <div class="resume-project-experience__item__heading">
                                     <div class="resume-project-experience__item__heading__part">
-                                        <span class="resume-project-experience__item__title">${{title}}$</span>
-                                        <a href="https://${{link}}$" target="_blank" rel="noopener">${{link}}$</a>
+                                        <span class="resume-project-experience__item__title">Deepbits - Software Supply Chain Security and Compliance(SaaS)</span>
+                                        <a href="https://deepbits.com" target="_blank" rel="noopener">deepbits.com</a>
                                     </div>
                                     <div class="resume-project-experience__item__heading__part">
-                                        <span class="resume-project-experience__item__date">${{date}}$</span>
-                                        ${{role}}$
+                                        <span class="resume-project-experience__item__date">May 2022 - Present, Remote, USA</span>
+                                        Full Stack Engineer
                                     </div>
                                 </div>
                                 <ul>
-                                    ${{#contents}}$
-                                    <li>- ${{.}}$</li>
-                                    ${{/contents}}$
+                                    <li>- As the system architecture designer, I&#39;m responsible for the system architecture design and the development of the core system.</li>
+                                    <li>- Developed the core system using React, MaterialUI, NextJS and NodeJS</li>
+                                    <li>- Developed backend system using NodeJS, Koa and DocumentDB</li>
+                                    <li>- Implemented the event queue system using BullMQ and Redis</li>
+                                    <li>- Integrated with Neo4j system to build a graph search user experience</li>
+                                    <li>- Developed on serverless architecture to implement high performance micro services</li>
+                                    <li>- Built the authentication and metering system to implement usage-based billing API</li>
+                                    <li>- Design and implement the open API system to support third-party integration</li>
+                                    <li>- Introduced agile development and facilitated scrum events</li>
                                 </ul>
                                 <p class="resume-project-experience__item__stack">
-                                    <span>${{resume.project.technology}}$:</span>
-                                    ${{tech_stack}}$
+                                    <span>Tech Stack:</span>
+                                    React, NextJS, TailwindCSS, NodeJS, Koa, MongoDB, Redis, Neo4j, AWS
                                 </p>
                             </div>
-                            ${{/resume.project.history}}$
+                            <div class="resume-project-experience__item">
+                                <div class="resume-project-experience__item__heading">
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__title">Pandaily - Tech Media Platform Spotlighting China&#39;s technology Innovation</span>
+                                        <a href="https://pandaily.com" target="_blank" rel="noopener">pandaily.com</a>
+                                    </div>
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__date">Jan 2021 - Apr 2022, Remote, Beijing</span>
+                                        CTO
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>- Led a multifaceted team through comprehensive build and deployment operations, optimizing processes for peak efficiency</li>
+                                    <li>- Work closely with PO&#x2F;PM and stakeholders to ensure smooth project delivery</li>
+                                    <li>- Executed SEO optimization strategies for enhanced search engine ranking</li>
+                                    <li>- Analyzed user behavior and data analytics to drive informed design decisions</li>
+                                    <li>- Utilized AMP technology to secured fast page loading times</li>
+                                    <li>- Optimized performance across front-end, back-end, and database</li>
+                                    <li>- Architected the scale out WordPress system for managing high traffic volumes</li>
+                                    <li>- Seamlessly integrated with third-party services, including Stripe, Mailchimp, and GA4</li>
+                                    <li>- Leveraged AI (TTS, GPT, Translation) to propel platform user experience</li>
+                                </ul>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
+                                    React, VueJS, Wordpress, Python, NodeJS, Postgres, AWS, Stripe, Serverless
+                                </p>
+                            </div>
+                            <div class="resume-project-experience__item">
+                                <div class="resume-project-experience__item__heading">
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__title">Airhost - Cloud-based Hospitality Business Management System(SaaS)</span>
+                                        <a href="https://airhost.sg" target="_blank" rel="noopener">airhost.sg</a>
+                                    </div>
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__date">May 2020 - Jan 2021, Remote, Singapore</span>
+                                        Front-end Tech Lead
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>- Spearheaded the front-end development team, driving project milestones, architected scalable and maintainable front-end frameworks</li>
+                                    <li>- Utilized React and Ruby on Rails to migrate the legacy system to a React SPA page</li>
+                                    <li>- Offered expert leadership and technical direction, encompassing meticulous code reviews, pair programming, and the coding guidelines setup</li>
+                                    <li>- Developed the complex UI components (dynamic form builder and calendar)</li>
+                                    <li>- Actively engaged in troubleshooting and resolving complex technical issues, ensuring stability and performance of the platform</li>
+                                </ul>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
+                                    React, Ruby on Rails, Jest, Webpack, Docker, AWS, Datadog
+                                </p>
+                            </div>
+                            <div class="resume-project-experience__item">
+                                <div class="resume-project-experience__item__heading">
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__title">ThoughtWorks</span>
+                                        <a href="https://thoughtworks.com" target="_blank" rel="noopener">thoughtworks.com</a>
+                                    </div>
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__date">Oct 2016 - May 2020, ThoughtWorks Xi&#39;an</span>
+                                        Front-end Tech Lead
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>- About the project - Prominent international airline platform (Name withheld due to confidentiality agreement)</li>
+                                    <li>- Led the migration of a large legacy e-commerce booking system to a modern React, Redux, and SPA front-end architecture</li>
+                                    <li>- Designed and enforced security best practices, technology training programs, and performance optimization for the front-end pipeline</li>
+                                    <li>- Implemented best practices for web accessibility, ensuring compliance with WCAG guidelines</li>
+                                    <li>- Designed the React based i18n architecture to support legacy dotnet MVC system</li>
+                                    <li>- Collaborated with UX for the consistent design system and shared component library</li>
+                                    <li>- Implemented the A&#x2F;B testing strategy to enhance the conversion rate systematically</li>
+                                    <li>- Mentored junior developers, enhancing front-end team skills through code reviews, session, and workshops</li>
+                                    <li>- Conducted comprehensive interviews across junior and senior levels to assess qualifications and fit for various technical roles</li>
+                                </ul>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
+                                    React, Redux, Jest, C#, Docker, TS, Lighthouse, SpeedCurve, Sentry
+                                </p>
+                            </div>
+                            <div class="resume-project-experience__item">
+                                <div class="resume-project-experience__item__heading">
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__title">GeekPark</span>
+                                        <a href="https://geekpark.net" target="_blank" rel="noopener">geekpark.net</a>
+                                    </div>
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__date">Oct 2014 - Sep 2016, Beijing</span>
+                                        Front-end Developer
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>- Developed the UI of the news system, encompassing the news&#x2F;user management system, user account system, order system, and the check-in system.</li>
+                                    <li>- Leveraged the latest cutting-edge technologies such as React, Redux, and ElectronJS to build the system</li>
+                                    <li>- Built and launched a series of fancy events pages that represent our brand essence</li>
+                                </ul>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>Tech Stack:</span>
+                                    jQuery, React, Redux, Ruby on Rails, ElectronJS, Chrome Extension, Git
+                                </p>
+                            </div>
                             <!-- END: project.history -->
                         </div>
                     </div>
