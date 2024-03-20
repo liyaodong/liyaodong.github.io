@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="${{ resume.lang }}$">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${{ resume.title }}$</title>
-    <meta name="description" content="${{ resume.description }}$">
+    <title>李耀东 - 简历</title>
+    <meta name="description" content="我是李耀东，一名极具创造力的资深前端开发工程师。">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
     <link href="./iconfont/iconfont.css" rel="stylesheet" />
     <style>
@@ -251,8 +251,8 @@
                     <img width="100" height="100" alt="Yaodong Li avatar" src="./images/avatar.png" />
                 </div>
                 <div class="resume-header__heading">
-                    <h1>${{ resume.name }}$</h1>
-                    <h2>${{ resume.job_title }}$</h2>
+                    <h1>李耀东</h1>
+                    <h2>资深前端开发&#x2F;全栈工程师</h2>
                 </div>
             </div>
             <ul class="resume-social">
@@ -310,14 +310,14 @@
             <div class="resume-body__side">
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.about.title }}$
+                        关于我
                     </h3>
                     <div class="resume-body__section__body">
                         <p style="margin-top: 6px; margin-bottom: 6px;">
-                            ${{resume.about.section1}}$ <span id="experience-years"></span> ${{resume.about.section2}}$
+                            一名 <span id="experience-years"></span> 年工作经验（29岁）的资深开发工程师，热爱创造新的产品。
                         </p>
                         <p style="margin-top: 6px; margin-bottom: 6px;">
-                            ${{resume.about.section3}}$
+                            我是一名产品导向的工程师，擅长学习和使用最适合的工具以最高效率和质量开发产品。
                         </p>
                         <script>
                             // Calculate years by current date minus 2014-10
@@ -332,7 +332,7 @@
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.skills.title }}$
+                        技能
                     </h3>
                     <div class="resume-body__section__body">
                         <ul class="resume-skills__list">
@@ -366,13 +366,11 @@
                                 <span class="resume-skills__score">4</span>
                             </li>
                             <li>
-                                <span class="resume-skills__name">${{ resume.skills.communication }}$/${{
-                                    resume.skills.problem_solving }}$</span>
+                                <span class="resume-skills__name">Communication/Problem Solving</span>
                                 <span class="resume-skills__score">4</span>
                             </li>
                             <li>
-                                <span class="resume-skills__name">${{ resume.skills.leadership }}$/${{
-                                    resume.skills.mentoring }}$/${{ resume.skills.consulting }}$</span>
+                                <span class="resume-skills__name">Leadership/Mentoring/Consulting</span>
                                 <span class="resume-skills__score">3</span>
                             </li>
                             <li>
@@ -393,89 +391,194 @@
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.education.title }}$
+                        教育
                     </h3>
                     <div class="resume-body__section__body">
-                        <h4>${{ resume.education.school }}$</h4>
-                        <span>${{ resume.education.major }}$</span>
+                        <h4>宝鸡文理学院</h4>
+                        <span>地理科学,  2011-2015</span>
                     </div>
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.language.title }}$
+                        语言
                     </h3>
                     <div class="resume-body__section__body">
-                        ${{ resume.language.detail }}$
+                        普通话 &#x2F; English (雅思7分)
                     </div>
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.session.title }}$
+                        技术分享活动
                     </h3>
                     <ul class="resume-body__section__body session-list">
-                        <li>${{ resume.session.css_engineering }}$ - Xi’an UI Super Day, 2017</li>
+                        <li>CSS 工程化 - Xi’an UI Super Day, 2017</li>
                         <li>Google I/O 2018 Redux - GDG Xi'an, 2018</li>
-                        <li>${{ resume.session.amp }}$ - FreeCodeCamp Events, 2018</li>
-                        <li>${{ resume.session.fdconf }}$, 2019</li>
-                        <li>${{ resume.session.devtool }}$ - GDG Xi'an, 2022</li>
-                        <li>${{ resume.session.passwordless }}$ - GDG Xi'an, 2023</li>
+                        <li>使用 AMP 构建超快网站 - FreeCodeCamp Events, 2018</li>
+                        <li>使用 PWA 和 AMP 构建超快网站 - 中国前端开发者大会 - 上海, 2019</li>
+                        <li>驾驭 Chrome 开发者工具 - GDG Xi'an, 2022</li>
+                        <li>使用 Passkey 进行无密码认证 - GDG Xi'an, 2023</li>
                     </ul>
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.hobby.name }}$
+                        个人项目
                     </h3>
                     <ul class="resume-body__section__body session-list">
-                        ${{#resume.hobby.contents}}$
-                        <li>${{.}}$</li>
-                        ${{/resume.hobby.contents}}$
+                        <li>在quickfiling.us上使用Next.js、AWS Lambda和ChatGPT打造的在线NIW&#x2F;EB1签证申请起草系统</li>
+                        <li>使用Next.js、Cloudflare、Discord API和Midjourney AI打造的在线AI绘图网站，maliang.app</li>
+                        <li>使用Next.js、Tailwind CSS、DaisyUI以及Strapi作为CMS的在线漫画阅读网站，toontoonimanga.com</li>
+                        <li>使用n8n、ChatGPT、AWS Lambda以及Telegram&#x2F;Lark&#x2F;Slack API打造的一系列日常工作自动化系统</li>
+                        <li>包括网络网关、防火墙、NAS、媒体服务器和智能家居系统的家庭服务器</li>
+                        <li>一系列Chrome扩展程序（AI翻译、图片管理、二维码生成器等）</li>
                     </ul>
                 </div>
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.trainer.title }}$
+                        讲师经验
                     </h3>
                     <ul class="resume-body__section__body session-list">
-                        <li>${{ resume.trainer.fe }}$</li>
-                        <li>${{ resume.trainer.tdd }}$</li>
-                        <li>${{ resume.trainer.tech_lead }}$</li>
-                        <li>${{ resume.trainer.micro }}$</li>
-                        <li>${{ resume.trainer.agile }}$</li>
+                        <li>精通前端系列培训</li>
+                        <li>测试驱动开发、代码重构与结对编程</li>
+                        <li>Tech Lead 培训</li>
+                        <li>微前端培训</li>
+                        <li>敏捷Scrum培训</li>
                     </ul>
                 </div>
             </div>
             <div class="resume-body__side resume-body__side--main">
                 <div class="resume-body__section">
                     <h3 class="resume-body__section__heading">
-                        ${{ resume.project.title }}$
+                        工作经历
                     </h3>
                     <div class="resume-body__section__body">
                         <div class="resume-project-experience">
                             <!-- Loop for project.history -->
                             <!-- BEGIN: project.history -->
-                            ${{#resume.project.history}}$
                             <div class="resume-project-experience__item">
                                 <div class="resume-project-experience__item__heading">
                                     <div class="resume-project-experience__item__heading__part">
-                                        <span class="resume-project-experience__item__title">${{title}}$</span>
-                                        <a href="https://${{link}}$" target="_blank" rel="noopener">${{link}}$</a>
+                                        <span class="resume-project-experience__item__title">Deepbits - 软件供应链安全及合规(SaaS)</span>
+                                        <a href="https://deepbits.com" target="_blank" rel="noopener">deepbits.com</a>
                                     </div>
                                     <div class="resume-project-experience__item__heading__part">
-                                        <span class="resume-project-experience__item__date">${{date}}$</span>
-                                        ${{role}}$
+                                        <span class="resume-project-experience__item__date">2022年5月至今, 远程工作, 美国</span>
+                                        全栈工程师
                                     </div>
                                 </div>
                                 <ul>
-                                    ${{#contents}}$
-                                    <li>- ${{.}}$</li>
-                                    ${{/contents}}$
+                                    <li>- 负责系统架构设计，开发核心系统。</li>
+                                    <li>- 使用React、MaterialUI、NextJS和NodeJS开发核心系统。</li>
+                                    <li>- 使用NodeJS、Koa和DocumentDB开发后端系统。</li>
+                                    <li>- 利用BullMQ和Redis实现事件队列系统。</li>
+                                    <li>- 集成Neo4j系统以构建图形搜索用户体验。</li>
+                                    <li>- 在无服务器架构上开发以实现高性能微服务。</li>
+                                    <li>- 构建认证和计量系统，实现基于使用情况的计费API。</li>
+                                    <li>- 设计并实施开放API系统以支持第三方集成。</li>
+                                    <li>- 引入敏捷开发并促进Scrum活动。</li>
                                 </ul>
                                 <p class="resume-project-experience__item__stack">
-                                    <span>${{resume.project.technology}}$:</span>
-                                    ${{tech_stack}}$
+                                    <span>技术栈:</span>
+                                    React, NextJS, TailwindCSS, NodeJS, Koa, MongoDB, Redis, Neo4j, AWS
                                 </p>
                             </div>
-                            ${{/resume.project.history}}$
+                            <div class="resume-project-experience__item">
+                                <div class="resume-project-experience__item__heading">
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__title">Pandaily - 聚焦中国科技创新的科技媒体平台</span>
+                                        <a href="https://pandaily.com" target="_blank" rel="noopener">pandaily.com</a>
+                                    </div>
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__date">2021年1月 - 2022年4月, 远程工作, 北京</span>
+                                        首席技术官（CTO）
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>- 领导多领域团队完成全面的构建和部署操作，优化流程以提高效率。</li>
+                                    <li>- 与PO&#x2F;PM和利益相关者密切合作，确保项目顺利交付。</li>
+                                    <li>- 执行SEO优化策略，提高搜索引擎排名。</li>
+                                    <li>- 分析用户行为和数据分析，推动知情的设计决策。</li>
+                                    <li>- 利用AMP技术确保页面快速加载。</li>
+                                    <li>- 优化前端、后端和数据库的性能。</li>
+                                    <li>- 构建了WordPress系统的扩展，以管理高流量。</li>
+                                    <li>- 与Stripe、Mailchimp和GA4等第三方服务无缝集成。</li>
+                                    <li>- 利用AI（TTS、GPT、翻译）推动平台用户体验。</li>
+                                </ul>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>技术栈:</span>
+                                    React, VueJS, Wordpress, Python, NodeJS, Postgres, AWS, Stripe, Serverless
+                                </p>
+                            </div>
+                            <div class="resume-project-experience__item">
+                                <div class="resume-project-experience__item__heading">
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__title">Airhost - 基于云的酒店业务管理系统(SaaS)</span>
+                                        <a href="https://airhost.sg" target="_blank" rel="noopener">airhost.sg</a>
+                                    </div>
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__date">2020年5月 - 2021年1月, 远程工作, 新加坡</span>
+                                        前端团队负责人
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>- 领导前端开发团队，推动项目里程碑，构建可扩展和可维护的前端框架。</li>
+                                    <li>- 使用React和Ruby on Rails将遗留系统迁移到React单页面应用。</li>
+                                    <li>- 提供专家级领导力和技术方向，包括严谨的代码审查、结对编程和编码指南设置。</li>
+                                    <li>- 开发复杂的UI组件（动态表单构建器和日历）。</li>
+                                    <li>- 积极参与解决复杂技术问题，确保平台稳定性和性能。</li>
+                                </ul>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>技术栈:</span>
+                                    React, Ruby on Rails, Jest, Webpack, Docker, AWS, Datadog
+                                </p>
+                            </div>
+                            <div class="resume-project-experience__item">
+                                <div class="resume-project-experience__item__heading">
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__title">ThoughtWorks</span>
+                                        <a href="https://thoughtworks.com" target="_blank" rel="noopener">thoughtworks.com</a>
+                                    </div>
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__date">2016年10月 - 2020年5月, ThoughtWorks 西安</span>
+                                        前端团队负责人
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>- 关于项目 - 著名国际航空公司平台（因保密协议未透露名称）</li>
+                                    <li>- 领导将大型传统电子商务预订系统迁移到现代React、Redux和SPA前端架构。</li>
+                                    <li>- 设计并强制执行前端管道的安全最佳实践、技术培训程序和性能优化。</li>
+                                    <li>- 实施网络可访问性最佳实践，确保遵守WCAG准则。</li>
+                                    <li>- 设计基于React的i18n架构，以支持传统dotnet MVC系统。</li>
+                                    <li>- 与UX合作，实现一致的设计系统和共享组件库。</li>
+                                    <li>- 实施A&#x2F;B测试策略，系统地提高转化率。</li>
+                                    <li>- 指导初级开发人员，通过代码审查、会话和研讨会提升前端团队技能。</li>
+                                    <li>- 对初级和高级层次进行全面面试，评估各种技术角色的资格和适配性。</li>
+                                </ul>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>技术栈:</span>
+                                    React, Redux, Jest, C#, Docker, TS, Lighthouse, SpeedCurve, Sentry
+                                </p>
+                            </div>
+                            <div class="resume-project-experience__item">
+                                <div class="resume-project-experience__item__heading">
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__title">GeekPark</span>
+                                        <a href="https://geekpark.net" target="_blank" rel="noopener">geekpark.net</a>
+                                    </div>
+                                    <div class="resume-project-experience__item__heading__part">
+                                        <span class="resume-project-experience__item__date">2014年10月 - 2016年9月, 北京</span>
+                                        前端开发
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>- 开发新闻系统的UI，包括新闻&#x2F;用户管理系统、用户账户系统、订单系统和签到系统。</li>
+                                    <li>- 使用React、Redux和ElectronJS等尖端技术构建系统。</li>
+                                    <li>- 构建并推出一系列代表品牌精髓的精彩活动页面。</li>
+                                </ul>
+                                <p class="resume-project-experience__item__stack">
+                                    <span>技术栈:</span>
+                                    jQuery, React, Redux, Ruby on Rails, ElectronJS, Chrome Extension, Git
+                                </p>
+                            </div>
                             <!-- END: project.history -->
                         </div>
                     </div>

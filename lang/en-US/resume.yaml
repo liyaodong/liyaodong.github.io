@@ -1,10 +1,13 @@
 lang: en
 title: Yaodong Li - Resume
 description: I am Yaodong Li, a web developer who loves convert ideas into reality.
-name: Yaodong Li
-job_title: Senior Font-end/Full Stack Engineer
 about:
   title: About Me
+  section1: A passionate 
+  section2: years (age 29) experienced front-end engineer who loves turning ideas into reality.
+  section3: A product-centric engineer, proficient in swiftly mastering new tools to tackle challenges and craft exceptional digital solutions.
+name: Yaodong Li
+job_title: Senior Font-end/Full Stack Engineer
 education:
   title: Education
   school: Baoji University of Arts and Sciences
