@@ -48,7 +48,7 @@ project:
         - Design and implement the open API system to support third-party integration
         - Introduced agile development and facilitated scrum events
       link: deepbits.com
-      date: May 2022 - Present, Remote, USA
+      date: May 2022 - Mar 2024, Remote, USA
       tech_stack: React, NextJS, TailwindCSS, NodeJS, Koa, MongoDB, Redis, Neo4j, AWS
 
     - name: pandaily
