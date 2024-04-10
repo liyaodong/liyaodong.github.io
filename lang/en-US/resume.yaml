@@ -38,15 +38,15 @@ project:
       role: Full Stack Engineer
       title: Deepbits - Software Supply Chain Security and Compliance(SaaS)
       contents:
-        - Led the design of the system architecture, taking charge of developing the core system with a focus on innovation and efficiency.
+        - Led the design of the system architecture, developing the core system with a focus on innovation and efficiency.
         - Spearheaded the development of the core system using React, MaterialUI, NextJS, and NodeJS, ensuring industry-leading practices.
-        - Pioneered the backend system with NodeJS, Koa, and DocumentDB, setting new standards in operational excellence.
-        - Orchestrated the implementation of the event queue system with BullMQ and Redis, enhancing process flows.
+        - Pioneered backend with NodeJS/Koa/DocumentDB, resulting in operational excellence.
+        - Orchestrated the implementation of the event queue system with BullMQ and Redis.
         - Directed the integration with Neo4j to craft a graph-based search user experience, revolutionizing data accessibility.
         - Championed the adoption of serverless architecture to deploy high-performance microservices, achieving unparalleled scalability.
-        - Engineered the authentication and metering system to roll out a cutting-edge, usage-based billing API.
-        - Designed and executed an open API system for seamless third-party integration, fostering ecosystem growth.
-        - Implemented agile methodologies, leading scrum events to drive project agility and team collaboration.
+        - Engineered the auth and metering system to roll out a usage-based billing API.
+        - Designed and executed an open API system for seamless third-party integration.
+        - Implemented agile methodologies, leading scrum events and team collaboration.
       link: deepbits.com
       date: May 2022 - Mar 2024, Remote, USA
       tech_stack: React, NextJS, TailwindCSS, NodeJS, Koa, MongoDB, Redis, Neo4j, AWS
@@ -55,15 +55,13 @@ project:
       role: CTO
       title: Pandaily - Tech Media Platform Spotlighting China's Technology Innovation
       contents:
-        - Led a multifaceted team through comprehensive build and deployment operations, optimizing processes for peak efficiency, establishing leadership in program execution.
         - Ensured smooth project delivery through close collaboration with PO/PM and stakeholders, aligning with strategic objectives.
-        - Executed SEO optimization strategies for enhanced search engine ranking, significantly boosting online visibility.
-        - Analyzed user behavior and data analytics, driving informed design decisions and enhancing user experiences.
-        - Utilized AMP technology to secure fast page loading times, improving website performance.
-        - Optimized performance across front-end, back-end, and database, ensuring high efficiency and scalability.
+        - SEO optimization for enhanced search engine ranking, significantly boosting online visibility.
+        - Analyzed user behavior and data analytics, driving design decisions and UX experiences.
+        - Utilized AMP framework to secure fast page loading times and seamless experience.
         - Architected a scalable WordPress system to manage high traffic volumes, demonstrating technical foresight and architectural acumen.
-        - Seamlessly integrated with third-party services, including Stripe, Mailchimp, and GA4, expanding platform capabilities.
-        - Leveraged AI (TTS, GPT, Translation) to propel platform user experience, pioneering innovative solutions.
+        - Integrated with Stripe, Mailchimp, and GA4, expanding platform capabilities.
+        - Leveraged AI (TTS, GPT) to propel user experience, pioneering innovative solutions.
       link: pandaily.com
       date: Jan 2021 - Apr 2022, Remote, Beijing
       tech_stack: React, VueJS, Wordpress, Python, NodeJS, Postgres, AWS, Stripe, Serverless
