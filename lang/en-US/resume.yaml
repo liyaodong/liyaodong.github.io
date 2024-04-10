@@ -30,7 +30,7 @@ session:
   devtool: Master Chrome Devtool
   passwordless: Passwordless Authentication with PassKey
 project:
-  title: Work Experiences
+  title: Work Experience
   technology: Tech Stack
   role: Role
   history:
