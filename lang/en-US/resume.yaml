@@ -38,32 +38,32 @@ project:
       role: Full Stack Engineer
       title: Deepbits - Software Supply Chain Security and Compliance(SaaS)
       contents:
-        - As the system architecture designer, I am responsible for designing the system architecture and developing the core system.
-        - Developed the core system using React, MaterialUI, NextJS and NodeJS
-        - Developed backend system using NodeJS, Koa and DocumentDB
-        - Implemented the event queue system using BullMQ and Redis
-        - Integrated with the Neo4j system to build a graph-based search user experience.
-        - Developed on serverless architecture to implement high performance micro services
-        - Built an authentication and metering system to implement a usage-based billing API.
-        - Designed and implemented the open API system to support third-party integration.
-        - Introduced agile development and facilitated scrum events
+        - Led the design of the system architecture, taking charge of developing the core system with a focus on innovation and efficiency.
+        - Spearheaded the development of the core system using React, MaterialUI, NextJS, and NodeJS, ensuring industry-leading practices.
+        - Pioneered the backend system with NodeJS, Koa, and DocumentDB, setting new standards in operational excellence.
+        - Orchestrated the implementation of the event queue system with BullMQ and Redis, enhancing process flows.
+        - Directed the integration with Neo4j to craft a graph-based search user experience, revolutionizing data accessibility.
+        - Championed the adoption of serverless architecture to deploy high-performance microservices, achieving unparalleled scalability.
+        - Engineered the authentication and metering system to roll out a cutting-edge, usage-based billing API.
+        - Designed and executed an open API system for seamless third-party integration, fostering ecosystem growth.
+        - Implemented agile methodologies, leading scrum events to drive project agility and team collaboration.
       link: deepbits.com
       date: May 2022 - Mar 2024, Remote, USA
       tech_stack: React, NextJS, TailwindCSS, NodeJS, Koa, MongoDB, Redis, Neo4j, AWS
 
     - name: pandaily
       role: CTO
-      title: Pandaily - Tech Media Platform Spotlighting China's technology Innovation
+      title: Pandaily - Tech Media Platform Spotlighting China's Technology Innovation
       contents:
-        - Led a multifaceted team through comprehensive build and deployment operations, optimizing processes for peak efficiency
-        - Worked closely with PO/PM and stakeholders to ensure smooth project delivery.
-        - Executed SEO optimization strategies for enhanced search engine ranking
-        - Analyzed user behavior and data analytics to drive informed design decisions
-        - Utilized AMP technology to secure fast page loading times.
-        - Optimized performance across front-end, back-end, and database
-        - Architected a scalable WordPress system to manage high traffic volumes.
-        - Seamlessly integrated with third-party services, including Stripe, Mailchimp, and GA4
-        - Leveraged AI (TTS, GPT, Translation) to propel platform user experience
+        - Led a multifaceted team through comprehensive build and deployment operations, optimizing processes for peak efficiency, establishing leadership in program execution.
+        - Ensured smooth project delivery through close collaboration with PO/PM and stakeholders, aligning with strategic objectives.
+        - Executed SEO optimization strategies for enhanced search engine ranking, significantly boosting online visibility.
+        - Analyzed user behavior and data analytics, driving informed design decisions and enhancing user experiences.
+        - Utilized AMP technology to secure fast page loading times, improving website performance.
+        - Optimized performance across front-end, back-end, and database, ensuring high efficiency and scalability.
+        - Architected a scalable WordPress system to manage high traffic volumes, demonstrating technical foresight and architectural acumen.
+        - Seamlessly integrated with third-party services, including Stripe, Mailchimp, and GA4, expanding platform capabilities.
+        - Leveraged AI (TTS, GPT, Translation) to propel platform user experience, pioneering innovative solutions.
       link: pandaily.com
       date: Jan 2021 - Apr 2022, Remote, Beijing
       tech_stack: React, VueJS, Wordpress, Python, NodeJS, Postgres, AWS, Stripe, Serverless
@@ -72,11 +72,11 @@ project:
       role: Front-end Tech Lead
       title: Airhost - Cloud-based Hospitality Business Management System(SaaS)
       contents:
-        - Spearheaded the front-end development team, driving project milestones, and architected scalable and maintainable front-end frameworks.
-        - Utilized React and Ruby on Rails to migrate the legacy system to a React SPA page
-        - Offered expert leadership and technical direction, encompassing meticulous code reviews, pair programming, and the coding guidelines setup
-        - Developed complex UI components, including a dynamic form builder and calendar.
-        - Actively engaged in troubleshooting and resolving complex technical issues, ensuring stability and performance of the platform
+        - Drove front-end development initiatives as the team leader, architecting scalable front-end frameworks and guiding the project to successful milestones.
+        - Transitioned the legacy system to a React SPA using React and Ruby on Rails, exemplifying technical leadership and vision.
+        - Provided expert leadership and direction, ensuring code quality and maintainability through rigorous reviews and guidelines.
+        - Innovated complex UI components, such as a dynamic form builder and calendar, enhancing product functionality.
+        - Tackled troubleshooting and resolved intricate technical issues, securing platform stability and performance.
       tech_stack: React, Ruby on Rails, Jest, Webpack, Docker, AWS, Datadog
       link: airhost.sg
       date: May 2020 - Jan 2021, Remote, Singapore
@@ -87,23 +87,22 @@ project:
       link: thoughtworks.com
       contents:
         - "About the project - Prominent international airline platform (Name withheld due to confidentiality agreement)"
-        - Led the migration of a large legacy e-commerce booking system to a modern React, Redux, and SPA front-end architecture
-        - Designed and enforced security best practices, technology training programs, and performance optimization for the front-end pipeline
-        - Implemented best practices for web accessibility, ensuring compliance with WCAG guidelines 
-        - Designed the React-based i18n architecture to support the legacy .NET MVC system.
-        - Collaborated with UX for the consistent design system and shared component library
-        - Implemented the A/B testing strategy to enhance the conversion rate systematically
-        - Mentored junior developers, enhancing front-end team skills through code reviews, session, and workshops 
-        - Conducted comprehensive interviews across junior and senior levels to assess qualifications and fit for various technical roles
+        - Masterminded the migration of a vast legacy e-commerce booking system to a modern React, Redux, and SPA front-end architecture, showcasing leadership in technological transformation.
+        - Instituted security best practices and technology training programs, elevating the technical prowess of the front-end team.
+        - Advocated for web accessibility, ensuring WCAG compliance and inclusive design.
+        - Formulated a React-based i18n architecture to support the legacy .NET MVC system, exemplifying cross-platform expertise.
+        - Collaborated with UX for a consistent design system and shared component library, fostering creativity and unity.
+        - Implemented A/B testing strategy to systematically enhance conversion rates, demonstrating a data-driven approach.
+        - Mentored junior developers, fostering skill development and professional growth within the team.
+        - Conducted extensive interviews for technical roles, ensuring robust talent acquisition and team composition.
       date: Oct 2016 - May 2020, ThoughtWorks Xi'an
       tech_stack: React, Redux, Jest, C#, Docker, TS, Lighthouse, SpeedCurve, Sentry
     - name: geekpark
       role: Front-end Developer
       title: GeekPark
       contents:
-        - Developed the UI of the news system, encompassing the news/user management system, user account system, order system, and the check-in system.
-        - Leveraged the latest cutting-edge technologies such as React, Redux, and ElectronJS to build the system
-        - Built and launched a series of fancy events pages that represent our brand essence
+        - Developed the UI for the news system, employing cutting-edge technologies such as React, Redux, and ElectronJS, to create a highly interactive and user-friendly interface.
+        - Launched a series of brand-representative fancy events pages, showcasing creative flair and technical expertise.
       link: geekpark.net
       date: Oct 2014 - Sep 2016, Beijing
       tech_stack: jQuery, React, Redux, Ruby on Rails, ElectronJS, Chrome Extension, Git
@@ -122,6 +121,6 @@ hobby:
     - An online comics reading website, toontoonimanga.com, using Next.js, Tailwind CSS, DaisyUI, and Strapi as the CMS
     - A series of automation systems for my daily work, using n8n, ChatGPT, AWS Lambda, and Telegram/Lark/Slack APIs
     - A home lab server that includes a network gateway, firewall, NAS, media server, and smart home system
-    - A series of Chrome extensions (AI Translation, Image Upload Helper, QR Code Generator, etc.)
+    - A series of Chrome extensions (AI Translation, Image Upload Helper, QR Code Generator
 experience:
   name: Experience
