@@ -3,8 +3,8 @@ title: Yaodong Li - Resume
 description: I am Yaodong Li, a web developer who loves convert ideas into reality.
 about:
   title: About Me
-  section1: A passionate 
-  section2: years (age 29) experienced front-end engineer who loves turning ideas into reality.
+  section1: A passionately experienced front-end engineer with
+  section2: years of experience, who loves turning ideas into reality.
   section3: A product-centric engineer, proficient in swiftly mastering new tools to tackle challenges and craft exceptional digital solutions.
 name: Yaodong Li
 job_title: Senior Front-end/Full Stack Engineer
@@ -38,14 +38,14 @@ project:
       role: Full Stack Engineer
       title: Deepbits - Software Supply Chain Security and Compliance(SaaS)
       contents:
-        - As the system architecture designer, I'm responsible for the system architecture design and the development of the core system.
+        - As the system architecture designer, I am responsible for designing the system architecture and developing the core system.
         - Developed the core system using React, MaterialUI, NextJS and NodeJS
         - Developed backend system using NodeJS, Koa and DocumentDB
         - Implemented the event queue system using BullMQ and Redis
-        - Integrated with Neo4j system to build a graph search user experience
+        - Integrated with the Neo4j system to build a graph-based search user experience.
         - Developed on serverless architecture to implement high performance micro services
-        - Built the authentication and metering system to implement usage-based billing API
-        - Design and implement the open API system to support third-party integration
+        - Built an authentication and metering system to implement a usage-based billing API.
+        - Designed and implemented the open API system to support third-party integration.
         - Introduced agile development and facilitated scrum events
       link: deepbits.com
       date: May 2022 - Mar 2024, Remote, USA
@@ -56,12 +56,12 @@ project:
       title: Pandaily - Tech Media Platform Spotlighting China's technology Innovation
       contents:
         - Led a multifaceted team through comprehensive build and deployment operations, optimizing processes for peak efficiency
-        - Work closely with PO/PM and stakeholders to ensure smooth project delivery
+        - Worked closely with PO/PM and stakeholders to ensure smooth project delivery.
         - Executed SEO optimization strategies for enhanced search engine ranking
         - Analyzed user behavior and data analytics to drive informed design decisions
-        - Utilized AMP technology to secured fast page loading times
+        - Utilized AMP technology to secure fast page loading times.
         - Optimized performance across front-end, back-end, and database
-        - Architected the scale out WordPress system for managing high traffic volumes
+        - Architected a scalable WordPress system to manage high traffic volumes.
         - Seamlessly integrated with third-party services, including Stripe, Mailchimp, and GA4
         - Leveraged AI (TTS, GPT, Translation) to propel platform user experience
       link: pandaily.com
@@ -72,10 +72,10 @@ project:
       role: Front-end Tech Lead
       title: Airhost - Cloud-based Hospitality Business Management System(SaaS)
       contents:
-        - Spearheaded the front-end development team, driving project milestones, architected scalable and maintainable front-end frameworks
+        - Spearheaded the front-end development team, driving project milestones, and architected scalable and maintainable front-end frameworks.
         - Utilized React and Ruby on Rails to migrate the legacy system to a React SPA page
         - Offered expert leadership and technical direction, encompassing meticulous code reviews, pair programming, and the coding guidelines setup
-        - Developed the complex UI components (dynamic form builder and calendar)
+        - Developed complex UI components, including a dynamic form builder and calendar.
         - Actively engaged in troubleshooting and resolving complex technical issues, ensuring stability and performance of the platform
       tech_stack: React, Ruby on Rails, Jest, Webpack, Docker, AWS, Datadog
       link: airhost.sg
@@ -90,7 +90,7 @@ project:
         - Led the migration of a large legacy e-commerce booking system to a modern React, Redux, and SPA front-end architecture
         - Designed and enforced security best practices, technology training programs, and performance optimization for the front-end pipeline
         - Implemented best practices for web accessibility, ensuring compliance with WCAG guidelines 
-        - Designed the React based i18n architecture to support legacy dotnet MVC system
+        - Designed the React-based i18n architecture to support the legacy .NET MVC system.
         - Collaborated with UX for the consistent design system and shared component library
         - Implemented the A/B testing strategy to enhance the conversion rate systematically
         - Mentored junior developers, enhancing front-end team skills through code reviews, session, and workshops 
